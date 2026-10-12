@@ -1,0 +1,184 @@
+
+
+
+
+
+                /* CONFIGURAÇÕES GERAIS */
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial;
+    min-height:100hv;
+    overflow-x: clip;
+}
+
+section div{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.conteiner{
+    width:100%;
+    max-width:1330px; 
+    margin: 0 auto;
+    padding:0px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+button{cursor:pointer;}
+
+@media (max-width: 768px){
+    main{padding:20px;}
+}
+
+
+                /* POSICIONAMENTO */
+
+.display{
+    display:flex;
+}
+
+.justify-start{
+    justify-content: start;
+}
+
+.padding-30{
+    padding:30px;
+}
+.heroSolucoes{
+    background-image: linear-gradient(to right,white 50%, transparent 70%), url("assets_site_iot_separados/imagens/Mudas\ Verdes\ ao\ Sol\ na\ Estufa.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat:no-repeat;
+    height:440px;
+}
+
+
+.border{
+    border:5px solid black;
+}
+
+
+                      /* CABECALHO */
+
+#cabecalho a{
+    color:black;
+    text-decoration: none;
+}
+#cabecalho a:hover{
+    padding:29px;
+    color:green;
+}
+
+#cabecalho button{
+    padding:15px;
+    border-radius:12px;
+    border: 2px solid rgba(0, 84, 0, 0.403);
+    color:white;
+    background-color: rgba(0, 60, 0, 0.725);
+}
+
+#logonav {
+    width:80%;
+}
+
+#logonav nav{
+    margin-inline:5%;
+}
+
+
+        /*MAIN CABECALHO */
+
+#main-cabecalho{
+    width: 60%;
+}
+
+h3, span{
+    color: green;
+}
+
+h2{
+    font-size:60px;
+    line-height: normal;
+}
+
+#main-cabecalho p{
+    font-size: 20px;
+    color:#666;
+    line-height: 1.6;
+    
+}
+
+#main-cards-solucao{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.corpo-card-solucoes{
+    padding:25px;
+    height:auto;
+    min-height: 250px;
+    width:360px;
+    display:flex;
+    flex-direction: column;
+    gap:18px;
+    border-radius:15px;
+    box-shadow: 0px 4px 24px 0px #00000026;   
+}
+
+.icone-card-solucao{
+    box-shadow: 0 4px 12px 0 #00000026;
+    width:60px;
+    height:60px;
+    border-radius:50px;
+    position:relative;
+    flex-shrink: 0;
+}
+
+.icone-card-solucao img{
+    position:absolute;
+    bottom:18px;
+    right:18px;
+    
+}
+
+.conteudo-card-solucao p{
+    margin-top:-10px;
+    line-height:1.5;
+    color:#666666;
+   
+}
+
+.caminho-card-solucao{
+    box-shadow: 0 4px 12px 0 #00000026;
+    padding:10px;
+    width: 130px;  
+    border-radius:12px;
+    margin-top:auto;
+
+}
+
+.caminho-card-solucao a{
+    color:green;
+    font-weight: 600;
+}

@@ -144,13 +144,16 @@ button{cursor:pointer;}
   
 }
 
-.hero{
+.heroPrincipal{
 
-    background-image: linear-gradient( to right,white 40%,transparent 70%), url("assets_site_iot_separados/Imagem\ do\ ChatGPT\ 25\ de\ set.\ de\ 2026\,\ 05_03_45.png");
+    background-image: linear-gradient( to right,white 40%,transparent 70%), url("assets_site_iot_separados/imagens/Imagem\ do\ ChatGPT\ 25\ de\ set.\ de\ 2026\,\ 05_03_45.png");
     background-size:cover;
     background-position: center;
     
 }
+
+
+
 
 .border{
     border:5px solid black;
@@ -215,7 +218,7 @@ button{cursor:pointer;}
 }
 
                     /* SETORES */
-.setores-cabecalho.{
+.setores-cabecalho {
     padding-bottom:20px;
 }
 
@@ -432,7 +435,7 @@ button{cursor:pointer;}
 
                     /* APRESENTAÇÃO CABECALHO */
 
-.apresentacao-cabecalho.{
+.apresentacao-cabecalho{
     padding-bottom:20px;
 }
 
@@ -735,14 +738,14 @@ button{cursor:pointer;}
     align-items: center;
     justify-content:start;
     gap:20px;
-    line-height:1.5;  
-    padding:  
+    line-height:1.5;
+    padding: 0;
 }
 
 
 #linha5{
 
-    background-image: linear-gradient( to left,white 50%,transparent 70%), url("assets_site_iot_separados/Imagem\ do\ ChatGPT\ 27\ de\ set.\ de\ 2026\,\ 07_54_12.png");
+    background-image: linear-gradient( to left,white 50%,transparent 70%), url("assets_site_iot_separados/imagens/Imagem\ do\ ChatGPT\ 27\ de\ set.\ de\ 2026\,\ 08_04_17.png");
     background-size:cover;
     background-position: center;
     height:320px;
@@ -769,7 +772,7 @@ button{cursor:pointer;}
 #linha6{
     margin-top:20px;
     border-radius:20px;
-    background-image: url(assets_site_iot_separados/Imagem\ do\ ChatGPT\ 27\ de\ set.\ de\ 2026\,\ 08_04_17.png);
+    background-image: url("assets_site_iot_separados/imagens/Imagem\ do\ ChatGPT\ 27\ de\ set.\ de\ 2026\,\ 08_04_17.png");
     background-position: start;
     height:220px;
 }
@@ -799,7 +802,7 @@ button{cursor:pointer;}
                     /* FOOTER */
 
 footer {
-    background-image: linear-gradient(to left, white 40%, transparent 70%), url(assets_site_iot_separados/Imagem\ do\ ChatGPT\ 27\ de\ set.\ de\ 2026\,\ 15_47_15.png);
+    background-image: linear-gradient(to left, white 40%, transparent 70%), url(assets_site_iot_separados/imagens/Imagem\ do\ ChatGPT\ 27\ de\ set.\ de\ 2026\,\ 15_47_15.png);
     margin-top:50px;
     background-size: 100%;
 }
