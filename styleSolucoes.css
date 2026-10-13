@@ -24,7 +24,7 @@ body{
 section div{
     display:flex;
     flex-direction: column;
-    gap:20px;
+    gap:15px;
 }
 
 .conteiner{
@@ -182,3 +182,59 @@ h2{
     color:green;
     font-weight: 600;
 }
+
+
+/* Footer */
+
+footer{
+    margin-top:100px;
+}
+
+#footertop{
+    display:flex;
+    gap:20px;
+}
+
+#footertop div{
+    flex:1;
+}
+
+#footertop div:nth-child(1){
+    flex:2;
+}
+
+ #footertop div:nth-child(5){
+    flex:2;
+    padding-left:30px;
+    border-left:1px solid #00000026;
+
+ }
+
+
+ #footertop div input{
+    padding:10px;
+    border-radius:12px;
+    border:1px solid #66666679;
+    
+ }
+
+ #footertop div button{
+    padding:10px;
+    border-radius:12px;
+    border:1px solid #66666640;
+    background-color:green;
+    color:white;
+    font-weight: 600;
+ }
+
+ #footertop p{
+    color:#666;
+    line-height:1.5;
+ }
+
+#footerbottom{
+    margin-top:100px;
+    display:flex;
+    justify-content: space-between;
+}
+
