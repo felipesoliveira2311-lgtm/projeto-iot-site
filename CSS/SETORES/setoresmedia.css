@@ -1,0 +1,214 @@
+@media (max-width: 1174px){
+            /* principal_bar menu expansível */
+
+/* Aparencia da barra */
+
+    #icone_sidebar{
+        display:block;
+    }
+
+    #principal_bar, #principal_bar ul{
+        display:block;
+        text-align: start;
+        padding:0px;
+    }
+    
+     #principal_bar{
+        box-shadow: 0 10px 20px 0 #00000026;
+        position:fixed;
+        border-radius:12px;
+        width:70%;
+        background-color: white;
+        height:100vh;
+        transform: translateX(-100%);
+        transition: 0.3s;
+        z-index:2;
+     }
+
+     #principal_bar.open_sidebar{
+        transform: translateX(0);
+     
+     }
+
+    #principal_bar li{
+        padding:30px;   
+
+    }
+    /*-------------------------------*/
+
+
+    /* Ajuste do icone para abrir e fechar sidebar */
+    .conteiner_icone {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index:2;
+  
+}
+
+#icone_sidebar {
+    width: 30px;
+    cursor: pointer;
+}
+/*----------------------------------------------*/
+
+/* Ajuste do botão de contato*/
+    .conteiner_btn{
+        text-align:end;
+        margin-left:10px;
+        display:inline;
+
+    }
+
+    #contato_principal{
+        background-color: white;
+        color:black;
+        box-shadow:none;
+    }
+/*-------------------------------*/
+
+/* Ajusete logo */
+    #logo{
+        display:none;
+    }
+/*-------------------------------*/
+
+/*Conteudo principal*/
+
+    #conteudo_banner{
+        width:100%;
+        padding: 20px 50px;
+    }
+
+    #hero_banner{
+        background-image: none;
+    }
+/*-------------------------------*/
+
+/* Ajuste Cards */
+    #cards_main, #carrossel_main{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+}
+/*--------------------------------------------------*/
+
+@media (max-width:950px){
+    .alinhamento{
+        padding: 30px 30px;
+    }
+}
+
+@media (max-width:500px){
+
+/*Ajuste Cards*/
+   #cards_main, #carrossel_main{
+    display:grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(9,1);
+            transition: .3s
+   }
+
+    #conteudo_banner p:nth-child(1){
+    font-size:15px;
+   }
+
+   #conteudo_banner h1{
+    font-size:40px;
+   }
+
+   #conteudo_banner p:nth-child(3){
+    font-size:16px;
+   }
+
+   .alinhamento{
+    padding:20px 20px;
+   }
+/* Construção carrossel */
+   #estrutura_cards, #estrutura_carrossel{
+    max-height:450px;
+    min-height:200px;
+            
+
+    position:relative;
+   }
+
+   .conteiner_card, .conteiner_carrossel{
+    width:100%;
+    height:auto;
+    min-height:430px;
+            
+
+   }    
+
+   
+   .botoes_carrossel{
+    display:flex;
+    justify-content: space-between;
+            
+
+   }
+
+   #proximo, #anterior{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    box-shadow: 0 4px 12px 0 #00000026;
+    border:none;
+
+    font-weight: 600;
+    font-size:25px;
+    color:green;
+    background-color:white;
+
+    position:absolute;
+}    
+
+    #proximo{
+        top:180px;
+        right:-15px
+    }
+
+    #anterior{
+        top:180px;
+        left:-15px;
+    }
+
+    #banner_main{
+        height:auto;
+        min-height: 200px;;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+    }
+
+    #banner_main div{
+        width:100%;
+    }
+
+    footer div a{
+        display:flex;
+        flex-direction: column;
+        padding-block:5px;
+    }
+
+}
+
+@media(max-width:1485px){
+
+    footer{
+        display:block;
+        text-align: center;
+    }
+    footer div{
+        text-align: center;
+    }
+}
