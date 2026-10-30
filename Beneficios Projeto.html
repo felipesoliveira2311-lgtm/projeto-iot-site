@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benefícios | SmartTimer – Timer de irrigação </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="#" class="logo" aria-label="SmartTimer – início">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#2f7d4f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14Z"/><path d="M5 19c3-4 6-7 10-9"/></svg>
+    SmartTimer
+  </a>
+  <nav aria-label="Principal">
+    <a href="#">Soluções</a>
+    <a href="#">Setores</a>
+    <a href="#">Como funciona</a>
+    <a href="#" id="nav-ben" aria-current="page">Benefícios</a>
+    <a href="#">Blog</a>
+  </nav>
+  <a href="#contato" class="btn btn-escuro" data-contato>Fale com um especialista</a>
+</header>
+
+<main id="app"></main>
+
+<footer>© 2026 SmartTimer. Soluções para o seu negócio.</footer>
+
+<script>
+const ICONES = {
+  planta: '<path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14Z"/><path d="M5 19c3-4 6-7 10-9"/>',
+  barras: '<path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/>',
+  gota: '<path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11Z"/>',
+  alvo: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>',
+  moeda: '<path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M9 10.5c1-1.5 5-1.5 6 0M12 7v10M10 15c.5.7 3.5.7 4 0"/>',
+  escudo: '<path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/>'
+};
+const svgIcone = k => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONES[k]}</svg>`;
+
+const B = [
+ { id:'plantas-saudaveis', icone:'planta', titulo:'Plantas mais saudáveis', resumo:'Ambiente ideal para o desenvolvimento das plantas.',
+   intro:'Irrigar na hora certa e na quantidade certa mantém o solo na umidade que a cultura precisa, sem estresse hídrico e sem encharcamento.',
+   pontos:[['Umidade equilibrada','Cada ciclo de irrigação é programado para manter o solo na faixa ideal durante todo o dia.'],['Menos doenças','Evitar excesso de água reduz fungos e apodrecimento de raízes.'],['Raízes mais fortes','Irrigação regular estimula um sistema radicular profundo e resistente ao calor.']],
+   numeros:[['Até 30%','menos plantas perdidas por estresse hídrico*'],['24h','de irrigação programada, inclusive de madrugada'],['+1','ajuste de horário por cultura e por setor']],
+   dt:'Cada cultura tem a sua rotina', dd:'Com o SmartTimer você cria programações diferentes para cada talhão, respeitando o que cada planta exige em cada fase.',
+   lista:['Irrigação em horários de menor evaporação','Programações separadas por setor','Pausa automática em dias de chuva'], foto:'20% 60%' },
+ { id:'produtividade', icone:'barras', titulo:'Mais produtividade', resumo:'Cultivos mais consistentes e de alta qualidade.',
+   intro:'Quando a água chega de forma uniforme e previsível, a lavoura cresce de forma homogênea e a colheita rende mais, com frutos e grãos mais padronizados.',
+   pontos:[['Crescimento uniforme','Todas as linhas recebem a mesma quantidade de água, sem pontos secos ou alagados.'],['Colheita mais previsível','Plantas no mesmo estágio facilitam o planejamento de mão de obra e logística.'],['Qualidade padronizada','Frutos e grãos com tamanho e aspecto mais regulares valorizam o produto.']],
+   numeros:[['Até 20%','de ganho de produtividade em casos bem manejados*'],['100%','das linhas com a mesma programação'],['Menos retrabalho','na colheita e na classificação']],
+   dt:'Mais resultado na mesma área', dd:'Em vez de aumentar a área plantada, você extrai mais de cada hectare com um manejo de água preciso e repetível.',
+   lista:['Uniformidade em toda a área irrigada','Rotinas fáceis de repetir a cada safra','Menos oscilação de qualidade entre lotes'], foto:'80% 50%' },
+ { id:'menos-desperdicio', icone:'gota', titulo:'Menos desperdício', resumo:'Redução de perdas de insumos e água.',
+   intro:'Irrigação manual ou sem controle costuma gastar mais do que a lavoura precisa. Um timer dedicado liga e desliga o sistema exatamente quando deve.',
+   pontos:[['Fim do “esqueci ligado”','O sistema desliga sozinho ao final do ciclo, sem depender de alguém lembrar.'],['Menos perda de adubo','Com a água dosada, fertilizantes aplicados via irrigação não são lavados do solo.'],['Menos energia','Bombas funcionam só pelo tempo necessário, reduzindo o consumo elétrico.']],
+   numeros:[['Até 40%','menos água usada em comparação ao manejo manual*'],['0','ciclos esquecidos ligados'],['Menos horas','de bomba em funcionamento']],
+   dt:'Cada litro no lugar certo', dd:'O SmartTimer controla duração e frequência de cada irrigação, evitando perdas por escoamento e evaporação.',
+   lista:['Duração exata por ciclo','Desligamento automático','Alertas quando algo foge do programado'], foto:'50% 30%' },
+ { id:'gestao-dados', icone:'alvo', titulo:'Gestão baseada em dados', resumo:'Decisões mais seguras e estratégicas.',
+   intro:'Cada irrigação gera informação. Com o histórico à mão, você deixa de decidir por intuição e passa a ajustar o manejo com base no que realmente aconteceu.',
+   pontos:[['Histórico completo','Veja quando, por quanto tempo e em qual setor cada irrigação foi feita.'],['Comparação entre safras','Entenda o que funcionou melhor e repita o que deu resultado.'],['Relatórios simples','Painéis claros, sem planilhas complicadas, para você e sua equipe.']],
+   numeros:[['100%','das irrigações registradas'],['Em tempo real','status de cada setor'],['1 painel','para toda a propriedade']],
+   dt:'Dados que viram decisão', dd:'Cruze o consumo de água com a produção e descubra onde está o melhor retorno em cada talhão.',
+   lista:['Registro automático de cada ciclo','Gráficos de consumo por período','Exportação de dados para sua equipe'], foto:'60% 80%' },
+ { id:'economia-sustentabilidade', icone:'moeda', titulo:'Economia e sustentabilidade', resumo:'Uso mais eficiente de recursos e menor impacto ambiental.',
+   intro:'Gastar menos água, energia e insumos reduz custos e também a pegada ambiental da propriedade, algo cada vez mais valorizado pelo mercado.',
+   pontos:[['Custo menor por safra','Menos água, energia e adubo por hectare melhoram a margem do produtor.'],['Água preservada','Uso consciente protege nascentes, poços e reservatórios.'],['Mercado mais exigente','Práticas sustentáveis ajudam a atender compradores e certificações.']],
+   numeros:[['Menos custo','com água, energia e insumos'],['Menor impacto','sobre solo e recursos hídricos'],['Retorno rápido','do investimento em automação']],
+   dt:'Economia que se paga sozinha', dd:'A redução nos custos de operação costuma compensar o investimento no equipamento ao longo das primeiras safras.',
+   lista:['Menor consumo de água e energia','Menos lixiviação de nutrientes','Prática alinhada a boas práticas agrícolas'], foto:'30% 40%' },
+ { id:'tranquilidade', icone:'escudo', titulo:'Tranquilidade no dia a dia', resumo:'Acompanhe tudo de forma remota e intuitiva.',
+   intro:'Programe, acompanhe e ajuste a irrigação pelo celular, de onde estiver. Menos deslocamentos e mais confiança de que tudo está funcionando.',
+   pontos:[['Controle remoto','Ligue, pause ou altere uma programação sem ir até o campo.'],['Avisos importantes','Receba alerta se um ciclo falhar ou se algo sair do esperado.'],['Fácil para toda a equipe','Interface simples, que qualquer funcionário aprende a usar rapidamente.']],
+   numeros:[['24/7','acompanhamento pelo celular'],['Menos viagens','até o campo'],['Alertas','direto no seu telefone']],
+   dt:'A lavoura sob controle, em qualquer lugar', dd:'Seja no escritório, em outra propriedade ou em casa, você vê o que está acontecendo e age em poucos toques.',
+   lista:['App simples e intuitivo','Notificações de falha e de conclusão','Vários usuários com acessos diferentes'], foto:'70% 20%' }
+];
+
+const PASSOS = [['Instale','Conecte o timer ao seu sistema de irrigação existente: gotejamento, aspersão ou pivô.'],['Programe','Defina horários, duração e setores de acordo com cada cultura.'],['Acompanhe','Veja tudo pelo celular e ajuste quando precisar.']];
+
+const cta = `<section class="cta" id="contato"><div class="cta-caixa"><div><h2>Resultados reais para o seu cultivo.</h2><p>Descubra como a tecnologia pode ajudar a sua produção.</p></div><a href="mailto:contato@smarttimer.com.br" class="btn btn-claro">Fale com um especialista</a></div></section>`;
+
+const ilustracao = t => `<svg viewBox="0 0 400 280" role="img" aria-label="Ilustração: painel do SmartTimer com gráfico de consumo de água">
+  <rect x="8" y="8" width="384" height="264" rx="16" fill="#fff" stroke="#e3ece6"/>
+  <text x="28" y="40" font-family="Poppins,sans-serif" font-weight="600" font-size="14" fill="#123d26">${t}</text>
+  <circle cx="352" cy="34" r="6" fill="#2f7d4f"/><text x="296" y="38" font-size="11" fill="#5f6f66" font-family="Inter,sans-serif">Ativo</text>
+  <g fill="#cfe7d6"><rect x="32" y="150" width="28" height="90" rx="5"/><rect x="82" y="120" width="28" height="120" rx="5"/><rect x="132" y="135" width="28" height="105" rx="5"/></g>
+  <g fill="#2f7d4f"><rect x="182" y="90" width="28" height="150" rx="5"/><rect x="232" y="105" width="28" height="135" rx="5"/><rect x="282" y="70" width="28" height="170" rx="5"/><rect x="332" y="100" width="28" height="140" rx="5"/></g>
+  <path d="M28 244h344" stroke="#e3ece6"/>
+  <path d="M60 80c4 6 8 10 8 15a8 8 0 0 1-16 0c0-5 4-9 8-15Z" fill="#2f7d4f" transform="translate(-24 -26)"/>
+  <text x="48" y="70" font-size="12" fill="#5f6f66" font-family="Inter,sans-serif">Consumo semanal</text>
+  <rect x="28" y="84" width="120" height="8" rx="4" fill="#e8f3ec"/><rect x="28" y="84" width="78" height="8" rx="4" fill="#2f7d4f"/>
+</svg>`;
+
+function home() {
+  return `
+  <section class="hero"><div class="hero-grade">
+    <div class="hero-texto">
+      <p class="sobre">Timer de irrigação agrícola</p>
+      <h1>Benefícios que geram resultados.</h1>
+      <p class="suave">Mais saúde para as plantas, menos desperdício e uma gestão do cultivo muito mais eficiente.</p>
+      <div class="hero-acoes"><a href="#plantas-saudaveis" class="btn btn-escuro">Ver benefícios</a><a href="#contato" class="btn btn-borda" data-contato>Falar com especialista</a></div>
+    </div>
+    <div class="foto" role="img" aria-label="Plantação em linhas ao amanhecer"></div>
+  </div></section>
+
+  <section class="secao" style="padding-top:0" aria-label="Benefícios do produto"><div class="miolo">
+    <div class="titulo-sec"><h2>Escolha um benefício e saiba mais</h2><p class="suave">Seis motivos para automatizar a irrigação da sua lavoura.</p></div>
+    <div class="grade">${B.map(b => `
+      <a class="card" href="#${b.id}">
+        <div class="icone">${svgIcone(b.icone)}</div>
+        <h3>${b.titulo}</h3><p>${b.resumo}</p><span class="saiba">Saiba mais</span>
+      </a>`).join('')}
+    </div>
+  </div></section>
+
+  <section class="secao fundo-claro"><div class="miolo passos">
+    <div class="titulo-sec"><h2>Simples de instalar e de usar</h2><p class="suave">Em três passos, sua irrigação passa a funcionar sozinha.</p></div>
+    <div class="grade">${PASSOS.map((p, i) => `<div class="card"><div class="n">${i + 1}</div><h3>${p[0]}</h3><p>${p[1]}</p></div>`).join('')}</div>
+  </div></section>
+
+  <section class="secao"><div class="miolo"><div class="banner" role="img" aria-label="Trator trabalhando em campo de cultivo">
+    <div><h2>Feito para a realidade do campo.</h2><p>Robusto, resistente ao clima e pensado para quem precisa de praticidade na rotina da lavoura.</p></div>
+  </div></div></section>
+  ${cta}`;
+}
+
+function detalhe(b) {
+  const outros = B.filter(x => x.id !== b.id);
+  const i = B.indexOf(b), prox = B[(i + 1) % B.length];
+  return `
+  <section class="hero"><div class="hero-grade">
+    <div class="hero-texto">
+      <a class="voltar" href="#">← Todos os benefícios</a>
+      <p class="sobre">Benefício ${i + 1} de ${B.length}</p>
+      <h1>${b.titulo}</h1>
+      <p class="suave">${b.intro}</p>
+      <div class="hero-acoes"><a href="#contato" class="btn btn-escuro" data-contato>Fale com um especialista</a></div>
+    </div>
+    <div class="foto" style="background-position:${b.foto}" role="img" aria-label="Imagem de lavoura ilustrando o benefício"></div>
+  </div></section>
+
+  <section class="secao" style="padding-top:0"><div class="miolo">
+    <div class="titulo-sec"><h2>Como isso acontece na prática</h2></div>
+    <div class="grade">${b.pontos.map(p => `<div class="card"><div class="icone">${svgIcone(b.icone)}</div><h3>${p[0]}</h3><p>${p[1]}</p></div>`).join('')}</div>
+  </div></section>
+
+  <section class="secao fundo-claro"><div class="miolo dois">
+    <div>
+      <h2>${b.dt}</h2><p class="suave">${b.dd}</p>
+      <ul>${b.lista.map(l => `<li>${l}</li>`).join('')}</ul>
+    </div>
+    <div class="ilustra">${ilustracao(b.titulo)}</div>
+  </div></section>
+
+  <section class="secao"><div class="miolo">
+    <div class="numeros">${b.numeros.map(n => `<div class="numero"><strong>${n[0]}</strong><span>${n[1]}</span></div>`).join('')}</div>
+    <p class="nota">* Valores ilustrativos. Os resultados variam conforme cultura, solo, clima e sistema de irrigação.</p>
+  </div></section>
+
+  <section class="secao fundo-claro" style="padding:50px 6vw"><div class="miolo">
+    <h2 style="font-size:1.3rem;margin-bottom:16px">Conheça os outros benefícios</h2>
+    <div class="outros">${outros.map(o => `<a href="#${o.id}">${o.titulo}</a>`).join('')}</div>
+    <p style="margin-top:22px"><a class="btn btn-borda" href="#${prox.id}">Próximo: ${prox.titulo}</a></p>
+  </div></section>
+  ${cta}`;
+}
+
+function render() {
+  const id = decodeURIComponent(location.hash.slice(1));
+  const b = B.find(x => x.id === id);
+  document.getElementById('app').innerHTML = b ? detalhe(b) : home();
+  document.title = (b ? b.titulo : 'Benefícios') + ' | SmartTimer';
+  if (id !== 'contato') window.scrollTo(0, 0);
+}
+window.addEventListener('hashchange', render);
+document.addEventListener('click', e => {
+  const c = e.target.closest('[data-contato]');
+  if (c) { e.preventDefault(); const el = document.getElementById('contato'); if (el) el.scrollIntoView({ behavior: 'smooth' }); }
+});
+render();
+</script>
+</body>
+</html>
