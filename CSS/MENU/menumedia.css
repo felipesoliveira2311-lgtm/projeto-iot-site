@@ -1,0 +1,87 @@
+
+@media (max-width: 1050px){
+            /* principal_bar menu expansível */
+
+/* Aparencia da barra */
+
+    .conteiner_icone{
+        padding:10px;
+        border:1px solid rgba(0, 128, 0, 0.61);
+        border-radius:10px;
+        background-color: white;
+        z-index:10;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #icone_sidebar{
+        display:block;
+        object-fit: cover;        
+        z-index:10;
+    }
+
+    #principal_bar, #principal_bar ul{
+        display:block;
+        text-align: start;
+        padding:0px;
+    }
+    
+     #principal_bar{
+        box-shadow: 0 10px 20px 0 #00000026;
+        position:fixed;
+        border-radius:12px;
+        width:70%;
+        background-color: white;
+        height:100vh;
+        z-index:10;
+        transform: translateX(-100%);
+        transition: 0.3s;  
+     }
+
+     #principal_bar.open_sidebar{
+        transform: translateX(0);
+     
+     }
+
+    #principal_bar li{
+        padding:30px;   
+
+    }
+    /*-------------------------------*/
+
+
+    /* Ajuste do icone para abrir e fechar sidebar */
+    .conteiner_icone {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+  
+}
+
+#icone_sidebar {
+    width: 30px;
+    cursor: pointer;
+}
+/*----------------------------------------------*/
+
+/* Ajuste do botão de contato*/
+    .conteiner_btn{
+        text-align:end;
+        margin-left:10px;
+        display:inline;
+
+    }
+
+    #contato_principal{
+        background-color: white;
+        color:black;
+        box-shadow:none;
+    }
+/*-------------------------------*/
+
+/* Ajusete logo */
+    #logo{
+        display:none;
+    }
+/*-------------------------------*/

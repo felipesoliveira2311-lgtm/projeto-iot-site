@@ -1,90 +1,67 @@
-@media (max-width: 1174px){
-            /* principal_bar menu expansível */
 
-/* Aparencia da barra */
 
-    #icone_sidebar{
-        display:block;
+@media (max-width: 1150px){
+
+    #estrutura_cards{
+        margin:0px 50px;
+    }
+   
+    #cards_main{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
     }
 
-    #principal_bar, #principal_bar ul{
-        display:block;
-        text-align: start;
-        padding:0px;
+    main{
+        margin:10px 10px;
     }
+
+    .margin-fixa{
+        margin:0px 20px;
+    }
+
+    #banner_main{
+        display:flex;
+        flex-direction: column;
+        min-height:0;
+        height:auto;
+        gap:20px;
+    }
+
+    footer{
+        border-top:1px solid #00000026;
+        padding:30px 50px;
+        line-height:2.0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer small{
+        color:#666;
+    }
+
+    @media(max-width: 850px){
+
+        #conteudo_principal section{
+       width:100%; 
+    }
+    }
+
+    @media(max-width:500px){
+
+    #conteudo_principal{
+        background-image:none;
+    }    
+
+    #conteudo_principal section{
+       width:100%; 
+    }
+    #conteudo_principal section h1{
+        font-size:40px;
+    }
+        
     
-     #principal_bar{
-        box-shadow: 0 10px 20px 0 #00000026;
-        position:fixed;
-        border-radius:12px;
-        width:70%;
-        background-color: white;
-        height:100vh;
-        transform: translateX(-100%);
-        transition: 0.3s;
-        z-index:2;
-     }
-
-     #principal_bar.open_sidebar{
-        transform: translateX(0);
-     
-     }
-
-    #principal_bar li{
-        padding:30px;   
-
-    }
-    /*-------------------------------*/
-
-
-    /* Ajuste do icone para abrir e fechar sidebar */
-    .conteiner_icone {
-    position: fixed;
-    top: 20px;
-    right: 10px;
-    z-index:2;
-  
-}
-
-#icone_sidebar {
-    width: 30px;
-    cursor: pointer;
-}
-/*----------------------------------------------*/
-
-/* Ajuste do botão de contato*/
-    .conteiner_btn{
-        text-align:end;
-        margin-left:10px;
-        display:inline;
-
-    }
-
-    #contato_principal{
-        background-color: white;
-        color:black;
-        box-shadow:none;
-    }
-/*-------------------------------*/
-
-/* Ajusete logo */
-    #logo{
-        display:none;
-    }
-/*-------------------------------*/
-
-/*Conteudo principal*/
-
-    #conteudo_banner{
-        width:100%;
-        padding: 20px 50px;
-    }
-
-    #hero_banner{
-        background-image: none;
-    }
-/*-------------------------------*/
-
 /* Ajuste Cards */
     #cards_main, #carrossel_main{
         display:grid;
@@ -92,16 +69,6 @@
         
     }
 
-}
-/*--------------------------------------------------*/
-
-@media (max-width:950px){
-    .alinhamento{
-        padding: 30px 30px;
-    }
-}
-
-@media (max-width:500px){
 
 /*Ajuste Cards*/
    #cards_main, #carrossel_main{
@@ -111,22 +78,6 @@
             transition: .3s
    }
 
-    #conteudo_banner p:nth-child(1){
-    font-size:15px;
-   }
-
-   #conteudo_banner h1{
-    font-size:40px;
-   }
-
-   #conteudo_banner p:nth-child(3){
-    font-size:16px;
-   }
-
-   .alinhamento{
-    padding:20px 20px;
-   }
-/* Construção carrossel */
    #estrutura_cards, #estrutura_carrossel{
     max-height:450px;
     min-height:200px;
@@ -181,34 +132,88 @@
         left:-15px;
     }
 
+}   
+
     #banner_main{
-        height:auto;
-        min-height: 200px;;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        gap:10px;
+        padding:30px 30px;
+  
+    }
+
+    #banner_main section{
+        width:100%;
     }
 
     #banner_main div{
         width:100%;
+        font-size:15px;
     }
 
+    footer{
+        padding:10px;
+    }
+    
     footer div a{
-        display:flex;
-        flex-direction: column;
-        padding-block:5px;
+        font-size:12px;
+        padding:10px;
     }
 
 }
 
-@media(max-width:1485px){
 
-    footer{
-        display:block;
-        text-align: center;
+
+
+@media (max-width:1300px){
+        .espacamento{
+            padding:0px 30px;
+        }
+
+        #banner_principal{
+            min-height:300px;
+            height:auto;
+        }
+
+        #texto_top_cards aside{
+            display:none;
+        }
+
+        #texto_top_cards{
+            margin:20px;
+        }
+
+        #card_solucoes{
+            margin-inline:20px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+
+         footer{
+        border-top:1px solid #00000026;
+        padding:30px 50px;
+        line-height:2.0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    footer div{
-        text-align: center;
+
+    footer small{
+        color:#666;
     }
+    }
+
+    @media(max-width:700px){
+        
+        .espacamento{
+            padding:10px
+        }
+
+        #card_solucoes{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        
+    } 
+
+        #banner_main{
+            margin:0px 10px;
+        }
 }

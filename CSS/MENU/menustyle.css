@@ -1,0 +1,124 @@
+/*------------------ Configurações gerais ------------------------------*/
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+    #icone_sidebar{
+        display:none;
+    }
+
+    html{
+       scroll-behavior: smooth;
+    }
+
+    body{
+        font-family:Arial, Helvetica, sans-serif
+        
+    }
+
+    a{
+        text-decoration: none;
+        color:inherit;
+        font-size:15px;
+    }
+
+    button{
+        cursor: pointer;
+    }
+
+ .black{
+        outline:5px solid black;
+    }
+    .red{
+        outline:5px solid red;
+    }
+    .green{
+        outline:5px solid green;
+    }
+
+    .yellow{
+        outline:5px solid yellow;
+    }
+ /*-------------------------------- fim ---------------------------------*/
+ 
+/*-------------------- Barra principal de navegação banner -------------*/
+
+/* conteiner do banner principal e imagem */
+
+
+      .conteiner_icone{
+        display:none;
+      }
+
+
+        #principal_bar{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+           padding-block:40px;
+           border-bottom:5px solid green;
+        }
+/*---------------------------*/
+
+
+
+
+/* logo da barra principal */
+    #logo{
+        max-width: 10%;
+        width:10%;
+    }
+/*-------------------------*/
+
+
+
+
+/* links de navegação da barra principal */
+    #nav_principal{
+        min-height: 10px;
+        height:auto;
+        width:50%;       
+    }   
+
+    #nav_principal ul{
+        display:flex;
+        gap:55px;
+        list-style-type: none;
+    }
+
+    #principal_bar a{
+        text-decoration: none;
+    }
+/*--------------------------------------*/
+
+
+
+/* Botao de contato da barra principal */
+
+    .conteiner_btn{
+        width:30%;
+        max-width:30%;
+    }
+
+    #contato_principal{
+        padding:15px;
+
+        background-color:#006d00e6;
+        color:white;
+        border-radius:5px;
+        box-shadow: 0px 8px 24px 0px rgba(128, 128, 128, 0.352);
+    }
+/*----------------------------------*/
+
+/*--------------------------------- fim -----------------------------------*/
+
+#nav_principal ul li a:hover{
+    color:green;
+}
+
+#contato_principal:hover{
+    background-color: rgb(0, 79, 0);
+}

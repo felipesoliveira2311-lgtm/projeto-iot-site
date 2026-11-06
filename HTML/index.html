@@ -4,461 +4,435 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto IoT</title>
-    <link rel="stylesheet" href="../CSS/INDEX/style.css">
+    <link rel="stylesheet" href="../CSS/INDEX/styleindex.css">
+    <link rel="stylesheet" href="../CSS/INDEX/tabletstyle.css">
+    <link rel="stylesheet" href="../CSS/INDEX/mobilestyle.css">
+    <link rel="stylesheet" href="../CSS/INDEX/efeitostyle.css">
+    <script src="../JS/carrossel_home.js" defer></script>
+    <script src="../JS/tablet_cards.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
+    <title>Home</title>
 </head>
 
 <body>
 
-    <!-- BANNER PRINCIPAL -->
+    <div id="menu"></div>
 
-    <section class="heroPrincipal">
+    <div id="imagem_de_fundo">
 
-        <!-- HEADER -->
+        <div class="margin-fixa">
 
-        <header id="cabecalho" class="display space-between padding-30">
-
-            <div class="display justify-start" id="logonav">
-                <img src="#">
-                <h1><a href="index.html">LOGO</a></h1>
-
-
-
-                <nav>
-                    <a class="padding-30" href="soluções.html">Soluções</a>
-                    <a class="padding-30" href="setores.html">Setores</a>
-                    <a class="padding-30" href="#">Como funciona</a>
-                    <a class="padding-30" href="beneficios.html">Beneficios</a>
-                    <a class="padding-30" href="#">Blog</a>
-                </nav>
-            </div>
-
-            <div>
-                <a id="contato" href="../HTML/formulario.html">Fale com um especialista</a>
-            </div>
-
-        </header>
-        <!-- LINHA 1 -->
-        <div id="banner-conteudo" class="conteiner">
-
-            <div class="display justify-between">
-
-                <!-- SECTION 1 LADO ESQUERDO -->
-
-                <section id="secLadoEsquerdo">
-                    <header>
-                        <p id="tec" class="padding-10 width-50">TECNOLOGIA A FAVOR DO CRESCIMENTO</p>
-                        <h2 class="padding-10">Cultive melhor.<br><span>Decida com dados.</span></h2>
-                        <p class="display padding-10 width-70">Soluções IoT que monitoram o ambiente, orientam o
-                            manejo e aumentam a produtividade de plantas, hortaliças e flores</p>
-
-                        <div class="marginblock-30 width-70  display gap-20">
-                            <button class="padding-10 button-green width-50 "><a href="soluções.html">Conheça a
-                                    solução</a></button>
-
-                            <button class="padding-10 button-white width-50">Ver como funciona</button>
-                        </div>
-
-                        <div class="display width-70 marginblock-20  gap-20">
-
-                            <p class="paddinginline-30 padding-10 display width-50 fundo-white"><img
-                                    src="../assets_site_iot_separados/iconesSVG/sprout.svg">Plantas
-                                mais saudáveis</p>
-                            <p class="paddinginline-30 padding-10 display width-50 fundo-white"><img
-                                    src="../assets_site_iot_separados/iconesSVG/chart-column.svg">Menos
-                                desperdício</p>
-                            <p class="paddinginline-30 padding-10 display width-50 fundo-white"><img
-                                    src="../assets_site_iot_separados/iconesSVG/chart-no-axes-gantt.svg">Mais
-                                produtividade</p>
-
-                        </div>
-
+            <section id='flex_titulo'>
+                <!--===== Conteudo principal =====-->
+                <div id="conteudo_principal">
+                    <header class='inline top' id="conteudo_banner">
+                        <p class="top-h2">TECNOLOGIA A FAVOR DO CRESCIMENTO</p>
+                        <h1>Cultive melhor.<br><span>Decida com dados.</span>
+                        </h1>
+                        <p class="bottom-h2">Soluções IoT que monitoram o ambiente, orientam o manejo e aumentam a
+                            produtividade de
+                            plantas,
+                            hortaliças e flores.
+                        </p>
                     </header>
 
-                </section>
-                <!-- SECTION 1 LADO DIREITO -->
+                    <!--===== CAMINHOS PARA FORMULÁRIO BANNER PRINCIPAL =====-->
 
-                <aside id="secLadoDireito" class="display items-center justify-end">
+                    <div class="inline" id="caminhos">
+                        <a href="solucoes.html">Conheça a solução</a>
+                        <a href="#como_funciona_home">Ver como funcionar</a>
+                    </div>
 
-                    <div class="width-50 ">
+                    <!--===== Cards banner principal =====-->
+                    <div class="" id="cards_banner_principal">
 
-                        <div class="display items-center fundo-white gap-20 marginblock-20">
-
-                            <div class="">
-                                <img class="" src="#">
+                        <div class="corpo_card_banner">
+                            <div class="icone_card_banner">
+                                <img src="../assets_site_iot_separados/iconesSVG/leaf.svg">
                             </div>
-
-                            <div>
-                                <small>Umidade do solo</small>
-                                <h2>62%</h2>
-                                <p>Barra de %</p>
-                            </div>
+                            <p>Plantas mais saudaveis</p>
                         </div>
 
-                        <div class="display items-center fundo-white gap-20 marginblock-20">
-
-                            <div class="">
-                                <img src="">
+                        <div class="corpo_card_banner">
+                            <div class="icone_card_banner">
+                                <img src="../assets_site_iot_separados/iconesSVG/grafico.svg">
                             </div>
-
-                            <div>
-                                <small>Temperatura</small>
-                                <h2>62%</h2>
-                                <p>Barra de %</p>
-                            </div>
+                            <p>Menos desperdício</p>
                         </div>
 
-                        <div class="display items-center fundo-white gap-20 marginblock-20">
+                        <div class="corpo_card_banner">
+                            <div class="icone_card_banner">
+                                <img src="../assets_site_iot_separados/iconesSVG/chart-no-axes-gantt.svg">
+                            </div>
+                            <p>Mais produtividade</p>
+                        </div>
 
-                            <div class="">
+                    </div>
+
+                </div>
+
+                <!-- ===== RESERVADO PARA API ===== -->
+                <!-- <div id="card_api">
+
+                    <div id="temperatura">
+                        <div class="conteiner_card_api">
+                            <div class="icone_card_api">
                                 <img src="#">
                             </div>
+                            <div class="conteudo_card_api"></div>
+                        </div>
+                    </div>
 
-                            <div>
-                                <small>Luminosidade</small>
-                                <h2>62%</h2>
-                                <p>Barra de %</p>
+                    <div id="temperatura">
+                        <div class="conteiner_card_api">
+                            <div class="icone_card_api">
+                                <img src="#">
+                            </div>
+                            <div class="conteudo_card_api"></div>
+                        </div>
+                    </div>
+
+                    <div id="temperatura">
+                        <div class="conteiner_card_api">
+                            <div class="icone_card_api">
+                                <img src="#">
+                            </div>
+                            <div class="conteudo_card_api"></div>
+                        </div>
+                    </div>
+
+                </div> -->
+
+            </section>
+
+
+        </div>
+
+        <main>
+
+            <section id="cards_setores">
+
+                <header>
+
+                    <div>
+                        <p class="top-h2">PARA CADA TIPO DE NEGÓCIO, UMA SOLUÇÃO</p>
+                        <h2>Cultivo inteligente em diferentes realidades.</h2>
+                    </div>
+
+                    <aside>
+                        <p>Da jardinagem profissional à produção em escala, nossas soluções se adaptam à sua operação.
+                        </p>
+                    </aside>
+
+                </header>
+
+                <div id="conteiner_cards_setores">
+                    <article class="esconder corpo_card_setores">
+                        <div class="img_card_setores">
+                            <img src="../assets_site_iot_separados/imagens/03_paisagismo.png">
+                        </div>
+
+                        <div class="icone_card_setores">
+                            <p>🌿</p>
+                        </div>
+
+                        <div class="conteudo_card_setores">
+                            <h3>Empresas de paisagismo</h3>
+                            <p>Monitore jardins, áreas externas e projetos de paisagismo, com mais eficiência e
+                                previsibilidade.</p>
+                            <div class="form_card_setores">
+                                <a href="../HTML/formulario.html"><img
+                                        src="../assets_site_iot_separados/iconesSVG/arrow-right.svg"></a>
                             </div>
                         </div>
+
+
+                    </article>
+
+                    <article class="corpo_card_setores">
+                        <div class="img_card_setores">
+                            <img src="../assets_site_iot_separados/imagens/04_floricultura.png">
+                        </div>
+
+                        <div class="icone_card_setores">
+                            <p>🌸</p>
+                        </div>
+
+                        <div class="conteudo_card_setores">
+                            <h3>Floriculturas</h3>
+                            <p>Garanta o ambiente ideal para cada espécie e aumente a qualidade e a durabilidade das
+                                plantas.</p>
+                            <div class="form_card_setores">
+                                <a href="../HTML/formulario.html"><img
+                                        src="../assets_site_iot_separados/iconesSVG/arrow-right.svg"></a>
+                            </div>
+                        </div>
+
+
+                    </article>
+
+                    <article class="corpo_card_setores">
+                        <div class="img_card_setores">
+                            <img src="../assets_site_iot_separados/imagens/05_hortifruti.png">
+                        </div>
+
+                        <div class="icone_card_setores">
+                            <p>🍊</p>
+                        </div>
+
+                        <div class="conteudo_card_setores">
+                            <h3>Comércios e hortifrútis</h3>
+                            <p>Monitore cultivos, estoques e ambientes de armazenamento, reduzindo perdas e mantendo a
+                                qualidade dos produtos.</p>
+                            <div class="form_card_setores">
+                                <a href="../HTML/formulario.html"><img
+                                        src="../assets_site_iot_separados/iconesSVG/arrow-right.svg"></a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <div id="botoes_carrossel_home">
+                        <button id="anterior" type="button">
+                            < </button>
+                                <button id="proximo" type="button"> > </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="margin-fixa" id="como_funciona_home">
+                <header>
+                    <p class="top-h2">DO CAMPO AO PAINEL</p>
+                    <h2>Como funciona?</h2>
+                    <p>Da coleta de dados à ação, tudo de forma simples e integrada.</p>
+                </header>
+
+                <div id="conteiner_cards_como_funciona">
+
+                    <div class="corpo_card_como_funciona">
+                        <div class="conteiner_icone_card_como_funciona">
+                            <div class="icone_card_como_funciona">
+                                <img src="../assets_site_iot_separados/iconesSVG/tablet-smartphone.svg">
+                            </div>
+
+                            <div class="linha_card">
+                                <hr>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo_card_como_funciona">
+                            <h4>01</h4>
+                            <h3>Instale os sensores</h3>
+                            <p>Em vasos, canteiros, estufas ou áreas externas.</p>
+                        </div>
+                    </div>
+
+                    <div class="corpo_card_como_funciona">
+                        <div class="conteiner_icone_card_como_funciona">
+                            <div class="icone_card_como_funciona">
+                                <img src="../assets_site_iot_separados/iconesSVG/cloud.svg">
+                            </div>
+
+                            <div class="linha_card">
+                                <hr>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo_card_como_funciona">
+                            <h4>02</h4>
+                            <h3>Os dados são enviados</h3>
+                            <p>Em tempo real para a plataforma.</p>
+                        </div>
+                    </div>
+
+                    <div class="corpo_card_como_funciona">
+                        <div class="conteiner_icone_card_como_funciona">
+                            <div class="icone_card_como_funciona">
+                                <img src="../assets_site_iot_separados/iconesSVG/grafico.svg">
+                            </div>
+
+                            <div class="linha_card">
+                                <hr>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo_card_como_funciona">
+                            <h4>03</h4>
+                            <h3>Acompanhe no painel</h3>
+                            <p>Visualize os dados de forma simples e intuitiva.</p>
+                        </div>
+                    </div>
+
+                    <div class="corpo_card_como_funciona">
+                        <div class="conteiner_icone_card_como_funciona">
+                            <div class="icone_card_como_funciona">
+                                <img src="../assets_site_iot_separados/iconesSVG/leaf.svg">
+                            </div>
+
+                            <div class="linha_card">
+                                <hr>
+                            </div>
+
+                        </div>
+
+                        <div class="conteudo_card_como_funciona">
+                            <h4>04</h4>
+                            <h3>Tome decisões melhores</h3>
+                            <p>Com base em dados e recomendações personalizadas.</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+            <section id="dados_app" class="margin-fixa">
+                <div id="conteiner_dados">
+                    <header>
+                        <p class="top-h2">DADOS QUE GERAM RESULTADOS</p>
+                        <h2>Tudo em um só lugar.</h2>
+                        <p>Um painel completo, intuitivo e acessível de qualquer dispositivo, com os dados que realmente
+                            importam para o seu cultivo.</p>
+                    </header>
+
+                    <div id="dados">
+                        <div class="conteudo_dados">
+                            <img src="../assets_site_iot_separados/iconesSVG/umidade.svg">
+                            <p>Umidade do solo e do ar</p>
+                        </div>
+
+                        <div class="conteudo_dados">
+                            <img src="../assets_site_iot_separados/iconesSVG/thermometer-sun.svg">
+                            <p>Temperatura</p>
+                        </div>
+
+                        <div class="conteudo_dados">
+                            <img src="../assets_site_iot_separados/iconesSVG/lumoinosidade.svg">
+                            <p>Luminosidade</p>
+                        </div>
+
+                        <div class="conteudo_dados">
+                            <img src="../assets_site_iot_separados/iconesSVG/saude.svg">
+                            <p>Saúde da planta</p>
+                        </div>
+
+                        <div class="conteudo_dados">
+                            <img src="../assets_site_iot_separados/iconesSVG/relatorio.svg">
+                            <p>Alertas e recomendações</p>
+                        </div>
+
+                            <a href="../HTML/formulario.html">Solicitar demonstração</a>
+                  
+                    </div>
+
+                </div>
+
+                <aside id="app">
+                    <div id="tela_app">
+                        <img src="../assets_site_iot_separados/imagens/sistema.png">
+                    </div>
                 </aside>
-            </div>
-    </section>
 
-    <!-- LINHA 2 -->
+            </section>
 
-    <section id="linha2">
+            <section id="banner_resultados">
+                <aside></aside>
+                <div id="conteiner_resultados">
+                    <header>
+                        <p class="top-h2">MAIS EFICIÊNCIA, MENOS DESPERDÍCIO</p>
+                        <h2>Resultados visíveis no seu dia a dia.</h2>
+                    </header>
 
-        <header class="conteiner setores-cabecalho">
+                    <div id="cards_resultados">
 
-            <p>PARA CADA TIPO DE NEGÓCIO, UMA SOLUÇÃO</p>
-            <h2>Cultivo inteligente em <span>diferentes realidades.</span></h2>
+                        <div>
+                            <div class="corpo_card_resultados">
+                                <div class="icone_card_resultados">
+                                    <img src="../assets_site_iot_separados/iconesSVG/leaf.svg">
+                                </div>
 
+                                <div class="conteudo_card_resultados">
+                                    <h3>Plantas mais saudáveis</h3>
+                                    <p>Condições ideais de cultivo.</p>
+                                </div>
+                            </div>
 
-        </header>
+                            <div class="corpo_card_resultados">
+                                <div class="icone_card_resultados">
+                                    <img src="../assets_site_iot_separados/iconesSVG/grafico.svg">
+                                </div>
 
-        <article class=" conteiner-card-setores  width-70 gap-20 conteiner display justify-between">
+                                <div class="conteudo_card_resultados">
+                                    <h3>Mais produtividade</h3>
+                                    <p>Cultivos mais consistentes e de alta qualidade.</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div>
+                            <div class="corpo_card_resultados">
+                                <div class="icone_card_resultados">
+                                    <img src="../assets_site_iot_separados/iconesSVG/recycle.svg">
+                                </div>
 
-            <div class="card-paisagismo">
+                                <div class="conteudo_card_resultados">
+                                    <h3>Menos perdas</h3>
+                                    <p>Redução de desperdícios de água e insumos.</p>
+                                </div>
+                            </div>
 
-                <div class="card-paisagismo-imagem">
-                    <img src="../assets_site_iot_separados/imagens/03_paisagismo.png" alt="Paisagismo">
+                            <div class="corpo_card_resultados">
+                                <div class="icone_card_resultados">
+                                    <img src="../assets_site_iot_separados/iconesSVG/gestao.svg">
+                                </div>
 
-                    <div class="card-paisagismo-icone">🌱</div>
-                </div>
+                                <div class="conteudo_card_resultados">
+                                    <h3>Gestão baseada em dados</h3>
+                                    <p>Decisões mais seguras e estratégicas.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="card-paisagismo-conteudo">
-
-                    <h3>Empresas de paisagismo</h3>
-
-                    <p>
-                        Monitore jardins, áreas externas e projetos
-                        de paisagismo, com mais eficiência
-                        e previsibilidade.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="card-floricultura">
-
-                <div class="card-floricultura-imagem">
-                    <img src="../assets_site_iot_separados/imagens/04_floricultura.png">
-
-                    <div class="card-floricultura-icone">🌸</div>
-                </div>
-                <div class="card-floricultura-conteudo">
-                    <h3>Floriculturas</h3>
-                    <p>Garanta o ambiente ideal para cada espécie e aumente a qualidade e a durabilidade das plantas.
-                    </p>
-
-
-                </div>
-
-            </div>
-
-            <div class="card-hortifruti">
-                <div class="card-hortifruti-imagem">
-                    <img src="../assets_site_iot_separados/imagens/05_hortifruti.png">
-                    <div class="card-hortifruti-icone">🍊</div>
-                </div>
-                <div class="card-hortifruti-conteudo">
-                    <h3>Comércios e hortifrútis</h3>
-                    <p>Monitore cultivos, estoques e ambientes de armazenamento, reduzindo perdas e mantendo a qualidade
-                        dos produtos.</p>
-
-                </div>
-
-            </div>
-
-        </article>
-    </section>
-
-    <!-- LINHA 3 -->
-
-    <section class="conteiner" id="linha3">
-
-        <header class="height-1 apresentacao-cabecalho">
-            <p>DO CAMPO AO PAINEL</p>
-            <h2>Como funciona?</h2>
-            <small>Da coleta de dados à ação, tudo de forma simples e integrada.</small>
-        </header>
-
-        <article class="display">
-            <div class="card-apresentacao-sensores">
-                <div class="display gap-10 flex-nowrap items-center">
-                    <div class="card-apresentacao-sensores-icone">🖲️</div>
-                    <div class=" card-line">
-                        <hr>
                     </div>
+            </section>
+
+            <section class="margin-fixa" id="banner_bottom">
+                <div id='conteudo_banner_bottom' class="margin-fixa">
+                    <h2>Vamos transformar o seu cultivo?</h2>
+                    <p>Fale com um especialista e descubra como a tecnologia pode ajudar a sua empresa.</p>
                 </div>
 
-                <div class="card-apresentacao-sensores-conteudo">
-                    <h4>01</h4>
-                    <h3>Instale os sensores</h3>
-                    <p>Em vasos, canteiros, estufas ou áreas externas.</p>
-                </div>
-            </div>
+                    <a class="btn_demonstracao margin-fixa" href="../HTML/formulario.html"> Solicitar demonstração</a>
+                
 
-            <div class="card-apresentacao-dados">
+            </section>
 
-                <div class="display gap-10 flex-nowrap items-center">
-                    <div class="card-apresentacao-dados-icone">☁️</div>
-                    <div class=" card-line">
-                        <hr>
-                    </div>
-                </div>
 
-                <div class="card-apresentacao-dados-conteudo">
-                    <h4>02</h4>
-                    <h3>Os dados são enviados</h3>
-                    <p>Em tempo real para a plataforma.</p>
-                </div>
-            </div>
+        </main>
 
-            <div class="card-apresentacao-painel">
+    </div>
 
-                <div class="display gap-10 flex-nowrap items-center">
-                    <div class="card-apresentacao-painel-icone">📊</div>
-                    <div class=" card-line">
-                        <hr>
-                    </div>
-                </div>
+    <footer class="espacamento">
 
-                <div class="card-apresentacao-painel-conteudo">
-                    <h4>03</h4>
-                    <h3>Acompanhe no painel</h3>
-                    <p>Visualize os dados de forma simples e intuitiva.</p>
-                </div>
-            </div>
-
-            <div class="card-apresentacao-decisoes">
-
-                <div class="display gap-10 flex-nowrap items-center">
-                    <div class="card-apresentacao-decisoes-icone">💡</div>
-                </div>
-
-                <div class="card-apresentacao-decisoes-conteudo">
-                    <h4>04</h4>
-                    <h3>Tome decisões melhores</h3>
-                    <p>Com base em dados e recomendações personalizadas.</p>
-                </div>
-
-            </div>
-
-        </article>
-
-    </section>
-
-    <!-- LINHA 4 -->
-    <section id="linha4" class="display conteiner">
-
-        <div class="linha4Esquerdo">
-
-            <header class="dashboard-cabecalho">
-                <p>DADOS QUE GERAM RESULTADOS</p>
-                <h2>Tudo em um só lugar.</h2>
-                <div>
-                    <small>Um painel completo, intuitivo e acessível de qualquer dispositivo, com dados que realmente
-                        importam para o seu cultivo.</small>
-                </div>
-            </header>
-
-            <div class="dashboard-conteudo">
-
-                <div class="items-center display dashboard-conteudo-geral">
-                    <img src="../assets_site_iot_separados/iconesSVG/droplets.svg">
-                    <p>Umidade do solo e do ar</p>
-                </div>
-
-                <div class="items-center display dashboard-conteudo-geral">
-                    <img src="../assets_site_iot_separados/iconesSVG/thermometer-sun.svg">
-                    <p>Temperatura</p>
-                </div>
-
-                <div class="items-center display dashboard-conteudo-geral">
-                    <img src="../assets_site_iot_separados/iconesSVG/sun.svg">
-                    <p>Luminosidade</p>
-                </div>
-
-                <div class="items-center display dashboard-conteudo-geral">
-                    <img src="../assets_site_iot_separados/iconesSVG/heart-plus.svg">
-                    <p>Saúde da planta</p>
-                </div>
-
-                <div class="items-center display dashboard-conteudo-geral">
-                    <img src="../assets_site_iot_separados/iconesSVG/file-text.svg">
-                    <p>Alertas e recomendações</p>
-                </div>
-
-                <button class="button-green"><a href="formulario.html">Ver o painel em ação</a></button>
-
-            </div>
-
+        <div>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Cookies</a>
         </div>
 
-        <div class="linha4Direito">
-            <img src="../assets_site_iot_separados/imagens/Imagem do ChatGPT 27 de set. de 2026, 03_52_59.png">
-        </div>
-
-
-    </section>
-
-    <!-- LINHA 5 -->
-    <section class="display " id="linha5">
-
-        <div class=" banner-resultado  "></div>
-
-        <di
-        v>
-            <div class="  resultado-cabecalho">
-                <p>MAIS EFICIÊNCIA, MENOS DESPERDÍCIO</p>
-                <h2>Resultados visíveis no seu dia a dia </h2>
-            </div>
-
-
-            <div id="corpo-resultado-geral" class=" display flex-wrap">
-
-                <div class="resultado-conteudo-geral ">
-
-                    <div></div>
-                    <div>
-                        <h3>Plantas mais saudáveis</h3>
-                        <p>Condições ideais de cultivo.</p>
-                    </div>
-                </div>
-                <div class="resultado-conteudo-geral ">
-                    <div></div>
-                    <div>
-                        <h3>Mais produtividade</h3>
-                        <p>Cultivos mais consistentes e de alta qualidade.</p>
-                    </div>
-                </div>
-
-                <div class="resultado-conteudo-geral ">
-                    <div></div>
-                    <div>
-                        <h3>Menos perdas</h3>
-                        <p>Redução de desperdício de água e insumos.</p>
-                    </div>
-                </div>
-
-                <div class="resultado-conteudo-geral ">
-                    <div></div>
-                    <div>
-                        <h3>Gestão baseada em dados</h3>
-                        <p>Decisões mais seguras e estratégicas.</p>
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-    <!-- LINHA 6 -->
-    <section id="linha6" class="conteiner">
-        <div class="solicitar-demonstracao">
-            <div>
-                <h2>Vamos transformar <span>o seu cultivo?</span></h2>
-                <p>Fale com um especialista e descubra como a tecnologia pode ajudar a sua empresa.</p>
-            </div>
-
-            <div class="display justify-center items-center "><button class="button-white"><a
-                        href="formulario.html">Solicitar demonstralção</a></button></div>
-        </div>
-    </section>
-
-    </main>
-
-    <footer class="">
-        <section class="conteiner">
-            <div id="rodape-start" class="display">
-                <div class="redes-rodape">
-                    <img src="#">
-                    <h2>Tecnologia que<br><span>faz o campo crescer</span></h2>
-                    <p>Soluções IoT que conectam o campo à inovação, com mais produtividade, sustentabilidade e
-                        resultados reais.</p>
-                </div>
-
-                <div class="solucoes-rodape">
-                    <h3>Soluções</h3>
-                    <p>Monitoramento ambiental</p>
-                    <p>Gestão de irrigação</p>
-                    <p>Controle de estufas</p>
-                    <p>Áreas externas</p>
-                    <p>Projetos personalizados</p>
-                </div>
-
-                <div class="setores-rodape">
-                    <h3>Setores</h3>
-                    <p>Paisagismo</p>
-                    <p>Floriculturas</p>
-                    <p>Comércios e hortifrúts</p>
-                    <p>Produção em escala</p>
-                    <p>Outros setores</p>
-                </div>
-
-                <div class="sobre-rodape">
-                    <h3>Sobre</h3>
-                    <a href="#">Como funciona</a>
-                    <a href="beneficios.html">Benefícios</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Quem somos</a>
-                    <a href="formulario.html">Fale com um especialista</a>
-                </div>
-
-                <div class="novidade-rodape">
-                    <div class="novidades-cabecalho-rodape">
-                        <h2>Receba novidades</h2>
-                        <p>Cadastre-se e receba conteúdos sobre tecnologia, cultivo e inovação no seu e-mail.</p>
-                    </div>
-                    <div class="novidades-campo-rodape">
-                        <label id="mail"></label>
-                        <input type="e-mail" id="mail" placeholder="Seu e-mail" requered>
-                        <button class="button-green">Inscrever -></button>
-                        <small>Sem spam, Apenas conteúdos relevantes.</small>
-                    </div>
-                </div>
-            </div>
-            <hr>
-
-            <div class="display justify-between">
-
-                <div class="rodape-bottom">
-                    <p class="padding-30">© 2026 Nome da Empresa. Todos os direitos reservados</p>
-                </div>
-
-                <div class="padding-30">
-                    <a class="padding-30" href="#">Política de Privacidade</a>
-                    <a class="padding-30" href="#">Termos de Uso</a>
-                    <a class="padding-30" href="#">Cookies</a>
-
-                </div>
-            </div>
+        <section>
+            <small>2026 Nome da Empresa. Todos os direitos reservados.</small>
         </section>
 
-    </footer>
 
+    </footer>
 </body>
 
 </html>

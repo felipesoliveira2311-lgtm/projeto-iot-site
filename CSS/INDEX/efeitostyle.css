@@ -1,0 +1,64 @@
+
+    .ajustar_img{
+        margin:0px 100px;
+    }
+
+/* Conheça a solução */
+    #caminhos a:nth-child(1):hover{
+        background-color: rgb(0, 105, 0);
+    }
+
+/* Ver como funciona */
+    #caminhos a:nth-child(2):hover{
+        background-color:rgb(225, 225, 225);
+        color:white;
+    }
+
+    /* ===== CARDS API ===== */
+
+    #flex_titulo{
+        display:flex;
+    }
+
+
+    /* ===== CARDS SETORES ===== */
+    .conteiner_card:hover{
+        transition:0.3s;
+        transform: translateY(-10px);
+    }
+
+
+    .corpo_card_setores:hover{
+        transition:0.3s;
+        transform: translateY(-10px);
+        border:2px solid green;
+
+    }
+
+    .form_card_setores:hover{
+        background-color:rgba(0, 128, 0, 0.215);
+        color:white;
+    }
+
+    /* ===== CARDS COMO FUNCIONA ===== */
+
+    .corpo_card_como_funciona:hover{
+        transition:0.3s;
+        transform: translateY(-10px);
+        border:2px solid green;
+        box-shadow: 0 10px 35px 0 #00000026;
+
+    }
+
+    /* ===== solicitar demonstração ===== */
+
+    #banner_bottom a:hover{
+          background-color: rgb(0, 105, 0);
+          color:white;
+    }
+
+    /* ===== FOOTER ===== */
+
+    footer div a:hover{
+        color: green;
+    }

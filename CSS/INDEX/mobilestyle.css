@@ -1,0 +1,202 @@
+@media (max-width: 500px){
+
+    main{
+        padding:0px;
+    }
+
+    .espacamento{
+        margin:0px 0px;
+    }
+    
+
+
+    #imagem_de_fundo{
+        background-image:none;
+    }
+
+     /* INTRO DO SITE E TITULO */
+
+        .margin-fixa{
+            margin:0px 20px;
+            padding:20px 0px; 
+        }
+        /* ocupação do decendente em relação ao pai */
+        #conteudo_banner{
+            
+            
+        }
+        /* titulo */
+        
+
+        /* paragrafo tamanho*/
+        #conteudo_banner p:nth-child(3){
+            width:70%;
+            font-size:16px;
+        }
+
+        /* botoes do inicio da página */
+        #caminhos{
+            display:flex;
+            flex-direction: column;
+        }
+
+        /* desabilita os cards */
+        #cards_banner_principal{
+            display:none;
+        }
+
+
+        
+
+    /* ===== CARDS SETORES ===== */
+/* posicionamento header cards setores */
+    #cards_setores header{
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        margin:0px;
+        padding:0px;
+
+    }
+
+/* estilização subtitulo */
+    .top-h2{
+        font-size: 14px;
+        line-height: normal;
+    }
+
+/* estilização texto*/
+    #cards_setores header h2{
+    font-size:26px;
+    width:100%;
+    }
+
+/* ===== CARDS SETORES ===== */
+    #conteiner_cards_setores{
+        margin:0px;
+        padding:0px;
+        margin-top:20px;
+    }  
+
+/* apaga o conteúdo dos cards da esquerda e direita */
+
+    #conteiner_cards_setores{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+    }
+
+    .icone_card_setores{
+        display:none;
+    }
+
+    #conteiner_cards_setores article:nth-child(2) div:nth-child(3),
+    #conteiner_cards_setores article:nth-child(3) div:nth-child(3){
+         display:grid;
+    }
+
+    /* retira a estilização dos cards */
+    #conteiner_cards_setores article:nth-child(2),#conteiner_cards_setores article:nth-child(3)  {
+        box-shadow: 0 4px 12px #00000026;
+        background-color:rgba(255, 255, 255, 0.529);
+        min-height:0px;
+        height:auto;
+        margin-bottom:auto;
+        opacity: calc(100%);
+        
+    }
+
+     /* ===== BOTÕES CARROSSEL =====*/
+
+/* estilização botões carrossel */
+   #botoes_carrossel_home{
+        display:block;      
+    }
+
+    #proximo, #anterior{
+        width:50px;
+        height:50px;    
+        border-radius:40px;
+        background-color: white;
+        border:none;
+        box-shadow:0 4px 12px 0 #00000026;
+        font-size:25px;
+        color:green;
+
+        position:absolute;
+    }
+
+    #proximo{
+        top:190px;
+        right:-20px;
+    }
+    
+    #anterior{
+        top:190px;
+        left:-20px;
+    }
+
+    /* ===== COMO FUNCIONA ===== */
+    .corpo_card_como_funciona{
+        margin:0px 10px;
+    }
+
+    /* DADOS_APP */
+
+    #conteiner_dados header h2{
+        width:100%;
+        font-size:26px
+    }
+
+    #conteiner_dados header p:nth-child(3){
+        width:100%;
+    }
+
+    #tela_app{
+        display:none;
+    }
+
+
+    /* ===== RESULTADOS ===== */
+
+    #banner_resultados aside{
+        display:none;
+    }
+
+
+
+    #banner_resultados{
+        background-image: none;
+        padding:20px;
+        margin:20px;
+
+    }
+
+     #cards_resultados{
+        gap:0px;
+        flex-wrap: wrap;
+    }
+
+    #banner_bottom{
+        margin-top:0px;
+        flex-wrap:wrap;
+    }
+
+    #banner_bottom a{
+           width:100%;
+           margin-bottom:20px;
+    }
+
+    footer{
+        padding:10px;
+        flex-wrap: wrap;
+    }
+    
+    footer div a{
+        font-size:12px;
+        padding:10px;
+    }
+
+}

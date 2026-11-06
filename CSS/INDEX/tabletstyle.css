@@ -1,0 +1,146 @@
+
+
+    /* ===== TABLETS ===== */
+    @media (max-width:1050px){
+
+    
+
+        /* INTRO DO SITE E TITULO */
+        .margin-fixa{
+            margin:0px 50px;
+            padding:20px 00px;
+        }
+        /* ocupação do decendente em relação ao pai */
+        
+
+        /* paragrafo tamanho*/
+        #conteudo_banner p:nth-child(3){
+            width:70%;
+            font-size:18px;
+
+        }
+
+        /* Cards banner */
+        .corpo_card_banner{
+            background-color: rgba(255, 255, 255, 0.938);
+            box-shadow:0px 4px 12px 0px rgb(255, 255, 255);
+            padding:10px;
+            border-radius:10px;
+
+        }
+
+         /* ===== CARDS API ===== */
+/* posicionamento */
+    #flex_titulo{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;   
+    }
+
+    #card_api{
+        display:flex;
+        gap:100px ;
+        padding:50px 0px;
+        }
+   
+
+
+
+
+
+    /* ===== CARDS SETORES ===== */
+/* posicionamento header cards setores */
+
+    #cards_setores{
+        padding:30px;
+    }
+
+    #cards_setores header{
+        display:flex;
+        justify-content: space-between;
+        margin:0px;
+        padding:0px;
+    }
+
+/* estilização texto*/
+
+
+/* ===== CARDS SETORES ===== */
+    #conteiner_cards_setores{
+        margin:0px;
+        padding:0px;
+    }  
+
+/* apaga o conteúdo dos cards da esquerda e direita */
+
+    #conteiner_cards_setores{
+        flex-wrap: wrap;
+        margin-top:50px;
+    }
+
+       .corpo_card_setores{
+        min-height:0px;
+        height:auto;
+       }
+
+       .form_card_setores{
+        margin-top:auto;
+        display:flex;
+        align-items: center;
+        align-content: center;
+        
+       }
+    
+
+    /* ===== CARDS COMO FUNCIONA ===== */
+    
+     .conteudo_card_como_funciona{
+        line-height:1.5;
+        width:100%;
+
+    }
+
+
+
+    /* ===== DADOS_APP ===== */
+    /* Quebrar display */
+    #dados_app{
+        display:block;
+
+        gap:20px;
+    }
+
+    #conteiner_dados header p:nth-child(3){
+        background-color: white;
+        border-radius:15px;
+        padding:10px;
+        width:50%;
+    }   
+
+
+    #banner_bottom{
+        margin:20px 10px;
+        padding:0px 0px  
+  
+    }
+
+    #banner_bottom a{
+        width:300px;
+    }
+
+      footer{
+        border-top:1px solid #00000026;
+        padding:30px 50px;
+        line-height:2.0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer small{
+        color:#666;
+    }
+
+
+ }

@@ -1,0 +1,511 @@
+/* ===== CONTEÚDOS OCULTOS ===== */
+    #botoes_carrossel_home{
+        display:none;
+    }
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.espacamento{
+    margin:0px 100px;
+    padding:20px 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+}
+
+a{
+    text-decoration: none;
+    color:inherit
+}
+
+button{
+    cursor: pointer;
+}
+
+/* ===== IMAGEM DE FUNDO ===== */
+    #imagem_de_fundo{
+         background-image: linear-gradient( to right,white 50%,transparent 80%), url("../../assets_site_iot_separados/imagens/Imagem\ do\ ChatGPT\ 25\ de\ set.\ de\ 2026\,\ 05_03_45.png");
+        background-size:cover;
+        background-position: center;
+    }
+
+
+.margin-fixa{
+    margin: 0px 100px;
+    padding:20px 0px;
+}
+
+
+
+/* ===== CONTEUDO PRINCIPAL ===== */
+/* Alinhamento */
+    /* posicionamento dos decendentes */
+    #conteudo_principal{
+        display:flex;
+        flex-direction: column;
+        gap:40px;
+    }
+
+/* ===== CONTEÚDO DO BANNER */
+
+    #conteudo_banner{
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+        max-width:800px;
+    }
+/* TECNOLOGIA A FAVOR DO CRESCIMENTO */
+    .top-h2{
+        color:green;
+        letter-spacing: 1.2px;
+        font-size:clamp(0.5rem, 4vw, 1rem )
+    }
+
+    #conteudo_banner h1{
+        font-size:clamp(3rem, 6vw, 4rem);
+        letter-spacing: -0.04em;
+        line-height: normal;
+
+    }
+
+    #conteudo_banner span{
+        color:green;
+    }
+
+/* PARÁGRAFO */
+    p{
+        color:#666666e0;
+        font-size:clamp(0.9rem, 4vw, 1rem);
+        max-width:500px;
+    }
+
+/* BOTÕES DO TITULO PRINCIPAL */
+    #caminhos{
+        display:flex;
+        gap:20px;
+    }
+
+ /* Conheça a solução */
+    #caminhos a:nth-child(1){
+        border:1px solid;
+        padding:10px;
+        border-radius:5px;
+
+        background-color:green;
+        color:white;
+        width: 300px;
+        text-align:center;
+       }
+
+/* Ver como funciona */
+    #caminhos a:nth-child(2){
+        border:1px solid #00000052;
+        padding:10px;
+        border-radius:5px;
+
+        background-color:white;
+        color:green;
+        width: 300px;
+        text-align:center;
+       }
+
+/* ===== CARDS BANNER ===== */
+/* Alinhamento dos cards */
+    #cards_banner_principal{
+        display:flex;
+        gap:50px;
+    }
+
+/* posicionamento da imagem com conteúdo */
+    .corpo_card_banner{
+        display:flex;
+        gap:10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+/* tamanho do icone */
+    .icone_card_banner img{
+        width:35px;
+    }
+
+/* Cards banner */
+    .corpo_card_banner{
+        background-color: rgba(255, 255, 255, 0.938);
+        box-shadow:0px 4px 12px 0px rgb(255, 255, 255);
+        padding:10px;
+        border-radius:10px;
+    }
+
+    .corpo_card_banner p{
+        font-size:16px;
+    }
+   
+
+    
+    /* ===== CARDS API ===== */
+    /* posicionamento */
+    #flex_titulo{
+        display:flex;
+        justify-content: space-between;       
+    }
+
+
+
+
+
+      /* ===== CARDS SETORES ===== */
+/* posicionamento header cards setores */
+    #cards_setores header{
+        display:flex;
+        justify-content: space-between;
+        margin:20px 70px;
+    }
+
+/* estilização texto*/
+    h2{
+        font-size:clamp(2rem, 4vw,2.5rem);
+        letter-spacing: -0.04em;
+        width:80%;
+        display:flex;
+        line-height: normal;
+    }
+
+    #cards_setores aside{
+        background-color: rgba(255, 255, 255, 0.864);
+        line-height:1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:20px;
+        padding:30px;
+    }
+
+    
+
+    #cards_setores aside p{
+        color:rgba(0, 0, 0, 0.63);
+        font-size:15px;
+    }
+
+/* ESTILIZAÇÃO CARDS SETORES */
+    #conteiner_cards_setores{
+        display:flex;
+        gap:20px;
+        margin-inline:150px;
+
+    }
+
+/* posicionamento dos elementos dentro dos cards */
+   .corpo_card_setores {
+    display: grid;
+    grid-template-rows: 220px 1fr;
+    flex: 1;
+    min-width: 0;
+    border-radius: 10px;
+    
+    min-height:100px;
+    height:auto;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 4px 12px #00000026;
+}
+
+    /* Imagem dos cards */
+    .img_card_setores{
+        height:220px;
+        border-radius:15px;
+    }
+
+/* posicionamento das imagens dos cards */
+    .img_card_setores img{
+        object-fit: cover;
+        height:100%;
+        width:100%;
+       
+        border-radius:15px;
+    }
+    
+/* conteiner do icone*/
+    .icone_card_setores{
+        box-shadow: 0 4px 12px 0 #00000026;
+        width:60px;
+        height:60px;
+        border-radius:60px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        
+        position:absolute;
+        top:170px;
+        left:10px;
+        z-index:10;
+    }
+
+    /* conteudo dos cards */
+    .conteudo_card_setores{
+         display:grid;
+        grid-template-rows: auto 1fr auto;
+        padding:20px;
+        gap:20px;
+    }
+
+    /* tamanho das letras do paragráfo */
+    .conteudo_card_setores p {
+        font-size:16px;
+    }
+
+    /* botoes para formulário */
+    .form_card_setores{
+        width:50px;
+        height:50px;
+        border-radius:50px;
+        border:1px solid #66666631;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:auto 1fr auto;
+        margin:0px;
+    }
+
+
+    /* ===== CARDS COMO FUNCIONA ===== */
+header{
+        line-height: 2.0;
+    }
+
+    #conteiner_cards_como_funciona{
+        display:flex;
+        gap:30px;
+        flex-wrap: wrap;
+
+    }
+
+    .corpo_card_como_funciona{
+        flex:1;
+        background-color: white;
+        padding:20px;
+        border-radius:20px;
+        box-shadow: 0 4px 12px #00000026;
+
+    }
+
+    .conteiner_icone_card_como_funciona{
+        display:flex;
+        gap:20px;
+        align-items: center;
+    
+    }
+
+    .conteudo_card_como_funciona h4{
+        color:green;
+    }
+
+    .icone_card_como_funciona{
+        min-width:50px;
+        width:50px;
+        min-height:50px;
+        height:50px;
+        box-shadow:0 4px 8 px 0 #00000026;
+        border-radius:50px;
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteudo_card_como_funciona{
+        line-height:1.5;
+        padding:10px;
+    }
+
+    .linha_card{
+        width:100%;
+        height:0px;
+    }
+
+    /* ===== DADOS ===== */
+
+/* conteiner dados */
+    #dados_app{
+        display:flex;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    
+    #conteiner_dados{
+        flex:1;
+    }
+
+    .conteudo_dados{
+        display:flex;
+        gap:20px;
+        padding:20px;
+    }
+
+    .btn_demonstracao.margin-fixa{
+        padding:15px;
+        font-weight: 600;
+        background-color: green;
+        border-radius:10px;
+        color:white;
+        width:300px;
+        text-align: center;
+
+        margin-left:30px;
+        margin-bottom:20px;
+    }
+
+    #conteiner_dados a:hover{
+        background-color: rgb(0, 49, 0);
+        
+    }
+
+    /* tela app */
+
+    #app{
+        flex:1;
+    }
+
+    #tela_app{
+        margin-top: 20px;;
+        width:100%;
+        min-height:0px;
+        height:auto;
+        border:15px solid black;
+        border-radius:20px;
+    }
+
+    #tela_app img{
+        object-fit: cover;
+        width:100%;
+        height:100%;
+
+    }
+
+    /* ===== RESULTADOS ===== */
+    #banner_resultados{    
+        padding:30px;
+        display:flex;
+        justify-content: space-between;
+        gap:50px;
+
+        min-height:200px;
+        height:auto;
+        background-image: linear-gradient( to left,white 50%,transparent 70%),  url("../../assets_site_iot_separados/imagens/resultados.png");
+        background-size: cover;
+        background-position:center;
+        height:auto;
+        min-height:100px;
+    }   
+
+    #banner_resultados aside{
+        width:50%;     
+    }
+
+    #cards_resultados{
+   
+        display:flex;
+        flex-wrap: nowrap;
+        gap:20px;
+}
+    .corpo_card_resultados{
+        display:flex;
+        gap:10px;
+        margin:20px;
+        align-items: center;
+    }
+
+    .icone_card_resultados{
+        min-width:50px;
+        min-height:50px;
+        border-radius:10px;
+        box-shadow:0 4px 12px 0 #00000026;
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color:white;
+    }
+
+    #banner_bottom{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:50px;
+        border-radius:20px;
+        color:white;
+        background-image: url('../../assets_site_iot_separados/imagens/resultados.png') ;
+        background-size: cover;
+        background-position:top;
+
+        margin-bottom:50px;
+    }
+
+    #banner_bottom div p{
+        color:white;
+    }
+
+    .btn_demonstracao{
+        background-color:green;
+        color:white;
+        padding:10px;
+        width:200px;
+  
+    }
+
+
+    #banner_bottom a{
+        background:white;
+        color:green;
+    }
+
+    #dados a{
+        background-color:green;
+        color:white;        
+        padding:10px 20px; 
+        margin:20px 50px;
+        border-radius:10px;
+        border:1px solid green;
+        
+    }
+
+       /* Alinhamento footer */
+footer{
+    display:flex;
+    justify-content: space-between;
+    border-top:5px solid green;
+
+
+}
+
+/* Alinhamento conteudo footer */
+footer div a{
+    padding-inline:20px;
+}
+
+footer div a:hover{
+    color:green;
+}
+
+
+
+
+
+
+    
+
+
+

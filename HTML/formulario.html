@@ -7,13 +7,11 @@
     <title>formulário</title>
     <script src="../JS/formulario.js" defer></script>
     <script src="../JS/cep.js" defer></script>
-    <script src="../JS/rota.js" defer></script>
-    <script src="../JS/redes.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <script src="../JS/redes.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="../JS/sidebar.js" defer></script>
     <script src="../JS/menu.js" defer></script>
     <link rel="stylesheet" href="../CSS/FORMULARIO/styleFormulario.css">
     <link rel="stylesheet" href="../CSS/FORMULARIO/formularioMedia.css">
@@ -22,353 +20,323 @@
 
 <body>
 
-    <!-------------------- Hero principal e barra de navegação -------->
-    <div id="hero_banner">
+    <div id="menu"></div>
 
-        <!------------------ Barra de navegação do hero banner --------------->
-        <header id="principal_bar">
+    <div id="banner_principal">
 
-            <!------------------------ Logo ----------------------------->
-            <div class=' ' id="logo">
-                <img src="#">
-            </div>
+        <section class='espacamento' id="conteudo_banner_principal">
+            <span class="span-topo">CONTATO</span>
+            <h1>
+                Fale com a gente.
+                <br>
+                <span>Vamos cultivar
+                    <br>
+                    juntos o futuro.</span>
+            </h1>
+            <p>Tire suas dúvidas, solicite uma demonstração ou converse com nossa equipe sobre o seu projeto de
+                irrigação inteligente.</p>
 
-            <!------------------- Barra de navegação -------------------->
-            <nav class='' id="nav_principal">
+            <div class="cards_banner">
 
-                <ul>
+                <div class="corpo_card_banner">
+                    <img src="../assets_site_iot_separados/iconesSVG/phone-log.svg">
+                    Atendimento rápido
+                    <br>
+                    e especializado.
+                </div>
 
-                    <li><a href="index.html">Home</a></li>
+                <div class="corpo_card_banner">
+                    <img src="../assets_site_iot_separados/iconesSVG/speech.svg">
+                    Equipe técnica
+                    <br>
+                    e comercial.
+                </div>
 
-                    <li><a href="#">Soluções</a></li>
+                <div class="corpo_card_banner">
+                    <img src="../assets_site_iot_separados/iconesSVG/hexagon.svg">
+                    Suporte em todas
+                    <br>
+                    as etapas.
+                </div>
 
-                    <li><a href="setores.html">Setores</a></li>
-
-                    <li><a href="#">Como funciona</a></li>
-
-                    <li><a href="beneficios.html">Beneficíos</a></li>
-
-                    <li><a href="../blog.html">Blog</a></li>
-
-                </ul>
-            </nav>
-
-            <!------------ Botão PRINCIPAL para o formulário ------------>
-            <div class="conteiner_btn">
-                
-            </div>
-        </header>
-
-        <div class=" conteiner_icone">
-            <img id="icone_sidebar" src="../assets_site_iot_separados/iconesSVG/icons8-cardápio.svg">
-        </div>
-
-
-
-        <!-------------- Conteudo principal do hero banner ------------------->
-        <section id="conteudo_banner" class="alinhamento">
-            <p>CONTATO </p>
-            <h1>Fale com a gente <br><span>Vamos cultivar juntos o futuro.</span></h1>
-            <p>Tire suas dúvidas, solicite uma demonstração ou conte mais sobre o seu projeto. Nossa equipe está pronta
-                para te atender.</p>
-        </section>
-
-        <!------------ Cards banner principal ----------->
-        <section class='alinhamento' id="cards_banner">
-
-            <div class="corpo_card_banner">
-                <img src="../assets_site_iot_separados/iconesSVG/leaf.svg">
-                <p>Atendimento rápido e especializado</p>
-            </div>
-
-            <div class="corpo_card_banner">
-                <img src="../assets_site_iot_separados/iconesSVG/speech.svg">
-                <p>Equipe técnica e comercial</p>
-            </div>
-
-            <div class="corpo_card_banner">
-                <img src="../assets_site_iot_separados/iconesSVG/shield-check.svg">
-                <p>Suporte em todas as etapas</p>
             </div>
 
         </section>
+
     </div>
-    <!--------------------------- fim ----------------------------->
 
     <main>
-        <!-------------- Formulário ----------------->
-        <form id='contato' class='alinhamento' method="post">
+        <section id='formulario' class="espacamento">
+            <div class="cards_contato">
+                <span class="span-topo">INFORMAÇÕES DE CONTATO</span>
+                <h2>
+                    Fale conosco
+                </h2>
+                <p>
+                    Escolha o melhor canal para entrar em contato ou preencha o formulário ao lado e retornaremos o mais
+                    breve possível.
+                </p>
 
-            <aside id="info_de_contato">
+                <div class="conteiner_cards">
 
-                <header id="conteudo_info_contato">
-                    <p>INFORMAÇÕES DE CONTATO</p>
-                    <h2>Fale conosco</h2>
-                    <p>Escolha o melhor canal para entrar em contato ou preencha o formulário e aguarde que retornaremos
-                        o mais breve possível.</p>
-                </header>
-
-                <section>
-
-                    <div class="conteiner_info_contato">
-                        <div class="icone_info_contato">
-                            <img src="#">
+                    <article class="corpo_card">
+                        <div class="img_card">
+                            <img src="../assets_site_iot_separados/iconesSVG/phone-log.svg">
                         </div>
-                        <div>
-                            <h3>Telefone</h3>
-                            <p><strong>(11) 4002-8922</strong></p>
+
+                        <div class="conteudo_card">
+                            <b>Telefone</b>
+                            <strong>(11) 4002-8922</strong>
                             <small>Segunda a sexta, das 8h às 18h</small>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="conteiner_info_contato">
-                        <div class="icone_info_contato">
-                            <img src="#">
+                    <article class="corpo_card">
+                        <div class="img_card">
+                            <img src="../assets_site_iot_separados/iconesSVG/mail.svg">
                         </div>
-                        <div>
-                            <h3>E-mail</h3>
-                            <p><strong>contato@hydrotime.com.br</strong></p>
-                            <small>Respondemos em até 24 horas</small>
-                        </div>
-                    </div>
 
-                    <div class="conteiner_info_contato">
-                        <div id="endereco_icone_info" class="icone_info_contato">
-                            <img src="#">
+                        <div class="conteudo_card">
+                            <b>E-mail</b>
+                            <strong>contato@hydrotime.com.br</strong>
+                            <small>Respondemos em até 24h</small>
                         </div>
-                        <div>
-                            <h3>Endereço</h3>
-                            <p><strong>Av. Dr. Adolpho Pinto, 109 - Barra Funda, São Paulo - SP, 01156-050</strong></p>
+                    </article>
+
+                    <article class="corpo_card">
+                        <div class="img_card">
+                            <img src="../assets_site_iot_separados/iconesSVG/map-pinned.svg">
+                        </div>
+
+                        <div class="conteudo_card">
+                            <b>Endereço</b>
+                            <strong>UNINOVE - Campus Memorial,<br> Av. Dr. Adolpho Pinto,<br> 109 - Barra Funda, São
+                                Paulo - SP,
+                                01156-050</strong>
                             <small>Atendimento presencial mediante agendamento</small>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="conteiner_info_contato" id="redes">
-                        <div class=" conteiner_info_redes" id="in">
-                            <a href="#">
-                                <img src="../assets_site_iot_separados/iconesSVG/chart-column.svg">
+                    <article class="corpo_card">
+                        <div class="redes_card">
+
+                            <a href="#" id="in">
+                                <img
+                                    src="../assets_site_iot_separados/socialMedia/Platform=Facebook, Color=Original.svg">
                             </a>
+
+                            <a href="#" id="ig">
+                                <img
+                                    src="../assets_site_iot_separados/socialMedia/Platform=Instagram, Color=Original.svg">
+                            </a>
+
+                            <a href="#" id="yt">
+                                <img
+                                    src="../assets_site_iot_separados/socialMedia/Platform=YouTube, Color=Original.svg">
+                            </a>
+
+
                         </div>
 
-
-                        <div class=" conteiner_info_redes" id="ig">
-                            <a href="#">
-                                <img src="../assets_site_iot_separados/iconesSVG/chart-no-axes-gantt.svg">
-                            </a>
-                        </div>
-
-                        <div class=" conteiner_info_redes" id="yt">
-                            <a href="#">
-                                <img src="../assets_site_iot_separados/iconesSVG/tablet-smartphone.svg">
-                            </a>
-                        </div>
-
-                        <div>
-                            <h3>Siga-nos nas redes</h3>
+                        <div class="conteudo_card">
+                            <b>Siga-nos nas redes</b>
                             <small>Novidades, dicas e muito mais!</small>
                         </div>
-
-                    </div>
-
-
-                </section>
-
-            </aside>
-
-            <section id="preenchimento">
-                <header>
-                    <p>ENVIE SUA MENSAGEM</p>
-                    <h2>Preencha o formulário</h2>
-                    <p>Conte pra gente o que você precisa. Vamos te ajudar a encontrar a melhor solução.</p>
-                </header>
-
-                <section>
-
-                    <label for="nome"></label>
-                    <input type="text" id="nome" placeholder="Nome completo" required>
-
-                    <div class="campo_duplo">
-                        <div>
-                            <label for="email"></label>
-                            <input type="email" id="email" placeholder="E-mail" required>
-                        </div>
-
-                        <div>
-                            <label for="telefone"></label>
-                            <input maxlength'11' '="number" id="telefone" placeholder="Telefone" required>
-                        </div>
-                    </div>
-
-                    <label for="setor"></label>
-                    <select name="setor" id="setor" required>
-                        <option value="" disabled selected>Selecione seu setor</option>
-                        <option value="residencial">Residencial</option>
-                        <option value="comercial">Comercial</option>
-                        <option value="industrial">Industrial</option>
-                        <option value="agricola">Agrícola</option>
-                        <option value="publico">Setor Público</option>
-                        <option value="educacional">Educacional</option>
-                        <option value="hoteleiro">Hotelaria e Turismo</option>
-                        <option value="outros">Outros</option>
-                    </select>
-
-
-                    <label for="interesse>"></label>
-                    <select name="interesse" id="interesse" required>
-                        <option value="" disabled selected>Qual é o seu interesse?</option>
-                        <option value="irrigacao">Irrigação Inteligente</option>
-                        <option value="monitoramento">Monitoramento de Plantas</option>
-                        <option value="automacao">Automação de Jardins</option>
-                        <option value="sensores">Instalação de Sensores IoT</option>
-                        <option value="economia">Economia de Água e Recursos</option>
-                        <option value="consultoria">Consultoria e Orçamento</option>
-                        <option value="manutencao">Manutenção e Suporte</option>
-                        <option value="outros">Outros</option>
-                    </select>
-
-                    <label for="descreva"></label>
-                    <input type="text" id="descreva" placeholder="Como podemos te ajudar?">
-
-                    <div id="checkbox_formulario">
-                        <label for="checkbox"></label>
-                        <input type="checkbox" id="checkbox" required>
-                        <small>Li e aceito a <a href="#">política de privacidade</a></small>
-                    </div>
-
-                    <div id="btn_enviar">
-                        <button type="submit">Enviar Mensagem</button>
-                    </div>
-
-                </section>
-            </section>
-
-        </form>
-        <!--------------- Formulário CEP ------------>
-        <section class="alinhamento" id="localizacao">
-
-            <form method="post" id="enderecoDados">
-                
-                <header>
-                                <p>NOSSA LOCALIZAÇÃO</p>
-                                <h2>Se preferir, venha nos visitar!</h2>
-                                <p>Nossa sede fica localizada em São Paulo. Digite o seu CEP na barra de pesquisa para
-                                    verificar o
-                                    trajeto
-                                    da sua residência até nós!</p>
-                </header>
-
-                <div id="form_cep">
-
-                    <div>
-                        <label for="cep">CEP:</label>
-                        <input type="text" maxlength="8" name="cep" id="cep" placeholder="Digite o seu CEP: 00000000">
-                    </div>
-
-                    <div class="campo_duplo_cep">
-
-                        <div>
-                            <label for="rua">Logradouro:</label>
-                            <input type="text" name="rua" id="rua" placeholder="Rua" readonly>
-                        </div>
-
-                        <div>
-                            <label for="bairro">Bairro:</label>
-                            <input type="text" name="bairro" id="bairro" placeholder="Bairro" readonly>
-                        </div>
-                                
-                                    
-                                    
-                        <div>
-                            <label for="cidade">Cidade:</label>
-                            <input type="text" name="cidade" id="cidade" placeholder="Cidade" readonly>
-                        </div>
-                                  
-                        <div>
-                            <label for="estado">Estado:</label>
-                            <input type="text" name="estado" id="estado" placeholder="Estado" readonly>
-                        </div>
-
-                    </div>
-
-                    <div id="btn_cep">
-                        <button type="button" id="btnverify">Verificar<button>
-                    </div>
+                    </article>
 
                 </div>
 
-            </form>
-
-            <div class=' flex' id="mapa-referencia">
-                <div id="tela-mapa">
-                    <div class="alinhamento" id="map"></div>
-                </div>
             </div>
 
-        </section>
-                <!------------------- FAQ ----------------->
+            <div id="preenchimento">
 
-        <section class="alinhamento" id="faq">
-
-            <div id="conteudo_faq">
                 <header>
-                    <p>DÚVIDAS FREQUENTES</p>
-                    <h2>Ainda tem dúvidas?</h2>
-                    <p>Confira as perguntas mais comuns sobre nossos serviços, produtos e como podemos te
-                    atender.
+                    <span class="span-topo">ENVIE SUA MENSAGEM</span>
+                    <h2>Preencha o formulário</h2>
+                    <p>
+                        Conte pra gente o que você precisa. Vamos te ajudar a encontrar a melhor solução.
                     </p>
                 </header>
 
-                <div>
+                <form id='preenchimento_dados' method="post">
 
-                    <details>
+                    <label for="nome">
+                        <img src="../assets_site_iot_separados/iconesSVG/user.svg">
+                        <input type="text" id="nome" placeholder="Nome completo" required>
+                    </label>
 
-                        <summary>Quais são os prazos de entrega?</summary>
-                            <p>Os prazos variam conforme o tipo de serviço solicitado e a complexidade do projeto. Em
-                            geral,o período estimado entre a contratação e a implementação completa da solução é de
-                            15 a 30
-                            dias, incluindo instalação, configuração e testes de funcionamento.</p>
-                    </details>
+                    <div id="preenchimento_contato">
+                        <label for="email">
+                            <img src="../assets_site_iot_separados/iconesSVG/mail.svg">
+                            <input type="email" id="email" placeholder="E-mail" required>
+                        </label>
 
-                    <details>
-                        <summary>Vocês atendem todo o Brasil?</summary>
-                            <p>Sim! Nossas soluções estão disponíveis em todos os estados brasileiros. Entre em contato
-                            com nossa equipe para conhecer as opções de atendimento e implantação disponíveis para sua
-                            região.</p>
-                    </details>
+                        <label for="numero">
+                            <img src="../assets_site_iot_separados/iconesSVG/phone-log.svg">
+                            <input type="number" maxlength='11' id="numero" placeholder="Número" required>
+                        </label>
+                    </div>
 
-                    <details>
-                        <summary>É possível agendar uma demonstração?</summary>
-                            <p>Sim! Você pode agendar uma visita à nossa sede entrando em contato com nossa equipe.
-                            Durante
-                            a visita, apresentaremos pessoalmente nossas soluções, serviços e suas principais
-                            funcionalidades.<Br>
+                    <label for="setor">
+                        <img src="../assets_site_iot_separados/iconesSVG/setor.svg">
+                        <select name="setor" id="setor" required>
+                            <option value="" disabled selected>Selecione seu setor</option>
+                            <option value="residencial">Residencial</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="industrial">Industrial</option>
+                            <option value="agricola">Agrícola</option>
+                            <option value="publico">Setor Público</option>
+                            <option value="educacional">Educacional</option>
+                            <option value="hoteleiro">Hotelaria e Turismo</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </label>
 
-                            Caso não seja possível comparecer presencialmente, disponibilizamos vídeos
-                            demonstrativos
-                            para que você conheça nossas soluções de onde estiver!</p>
-                    </details>
+                    <label for="interesse">
+                        <img src="../assets_site_iot_separados/iconesSVG/interesse.svg">
+                        <select name="interesse" id="interesse" required>
+                            <option value="" disabled selected>Qual é o seu interesse?</option>
+                            <option value="demonstracao">Solicitar demonstração</option>
+                            <option value="soluções">Solicitar soluções</option>
+                            <option value="automacao">Suporte técnico</option>
+                            <option value="sensores">Outro assunto.</option>
+                        </select>
+                    </label>
 
-                    <details>
-                        <summary>Como funciona o suporte técnico</summary>
-                            <p>Garantimos atendimento inicial em até 2 horas após a abertura do chamado, com
-                            acompanhamento
-                                técnico até a resolução do problema. Nosso objetivo é solucionar as solicitações em até
-                                48
-                                horas, conforme a complexidade de cada caso.</p>
-                        </details>
-                </div>
+                    <label for="descreva">
+                        <img src="../assets_site_iot_separados/iconesSVG/relatorio.svg">
+                        <textarea name="descreva" id="descreva" placeholder="Como podemos te ajudar?"></textarea>
+                    </label>
+
+                    <div id="checkbox">
+                        <input type="checkbox">Li e aceito a <a href="#">Politica de privacidade</a>
+                    </div>
+
+                    <div>
+                        <button type="submit" id="btn_enviar">Enviar mensagem</button>
+                    </div>
+                </form>
 
             </div>
+
+        </section>
+
+        <section class='espacamento' id="localizacao">
+            <aside>
+                <div>
+                    <span class="span-topo">LOCALIZAÇÃO DO PROJETO</span>
+                    <h2>Informe o CEP da<br> sua área</h2>
+                    <p>
+                        Digite o CEP do local onde o projeto será implementado para nos ajudar a entender melhor a sua
+                        região.
+                    </p>
+                </div>
+
+            </aside>
+
+            <div id="preenchimento_cep">
+                <header>
+                    <div class="icone_cep">
+                        <img src="../assets_site_iot_separados/iconesSVG/map-pinned.svg">
+                    </div>
+                    <div class="conteudo_cep">
+                        <h2>Digite o CEP</h2>
+                    </div>
+                </header>
+                <p>Utilizamos o CEP para analisar as condições da sua região e oferecer a melhor
+                    solução.</p>
+
+
+                <form class="buscar_cep">
+
+                    <div>
+                        <label for="cep"> </label>
+                        <input type="text" id="cep" maxlength="8" name='cep' placeholder="00000000" required>
+
+
+                        <button id='btn_cep' type="button">Buscar</button>
+
+                        <button id='btn_cep_media' class='btn_cep' type="button"><img src='../assets_site_iot_separados/iconesSVG/search.svg'></button>
+                    </div>
+
+                    <div>
+
+                        <label for="rua"></label>
+                        <input readonly placeholder="Rua" id="rua" name="rua">
+
+                        <label for="bairro"></label>
+                        <input readonly placeholder="Bairro" id="bairro" name="bairro">
+
+                        <label for="cidade"></label>
+                        <input readonly placeholder="Cidade" id="cidade" name="cidade">
+
+                        <label for="estado"></label>
+                        <input readonly placeholder="Estado" id="estado" name="estado">
+
+                    </div>
+
+                </form>
+            </div>
+            </div>
+        </section>
+
+        <section class='espacamento' id="faq">
+            <div class="img_faq">
+                <img src="../assets_site_iot_separados/imagens/Figue-borracha em estúdio minimalista.png">
+            </div>
+
+            <div class="conteiner_faq">
+
+                <header>
+                    <span>DÚVIDAS FREQUENTES</span>
+                    <h2>Ainda tem dúvidas?</h2>
+                    <p>
+                        Confira as perguntas mais comuns sobre nossos serviços, produtos e como podemos te atender.
+                    </p>
+                </header>
+                
+                <details>
+                    <summary>Quais são os prazos de entrega?</summary>
+                    <p>
+                        O prazo depende da solução e do escopo do projeot. Nossa equipe informa uma estimativa após a avaliação inicial.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Vocês atendem todo o Brasil?</summary>
+                    <p>
+                      Sim! Atendemos clientes de diferentes regiões do país.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>É possível agendar uma demonstração?</summary>
+                    <p>
+                        Sim. Preencha o formulário e selecione "Solicitar demonstração"
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Como funciona o suporte técnico?</summary>
+                    <p>
+                       Nossa equipe avalia cada solicitação e orienta você durante as etapas de atendimento.
+                    </p>
+                </details>
+
+            </div>
+
 
         </section>
 
     </main>
 
-       <footer class="alinhamento">
 
-        <section>
-            <p>2026 Nome da Empresa. Todos os direitos reservados.</p>
-        </section>
+
+
+
+
+
+    <footer class="espacamento">
 
         <div>
             <a href="#">Política de Privacidade</a>
@@ -376,9 +344,13 @@
             <a href="#">Cookies</a>
         </div>
 
+        <section>
+            <small>2026 Nome da Empresa. Todos os direitos reservados.</small>
+        </section>
+
 
     </footer>
-    
+
 </body>
 
 </html>

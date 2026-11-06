@@ -12,77 +12,35 @@
 </head>
 
 <body>
-    <!-------------------- Hero principal e barra de navegação -------->
-    <div id="hero_banner">
 
-        <!------------------ Barra de navegação do hero banner --------------->
-        <header id="principal_bar">
+    <div id="menu"></div>
 
-            <!------------------------ Logo ----------------------------->
-            <div class=' ' id="logo">
-                <img src="#">
-            </div>
+    <div id="banner_principal">
 
-            <!------------------- Barra de navegação -------------------->
-            <nav class='' id="nav_principal">
-
-                <ul>
-
-                    <li>
-                        <a href="../HTML/index.html">Home</a>
-                    </li>
-
-                    <li class="">
-                        <a href="#">Soluções</a>
-                    </li>
-
-                    <li>
-                        <a href="../HTML/setores.html">Setores</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Como funciona</a>
-                    </li>
-
-                    <li>
-                        <a href="../HTML/beneficios.html">Beneficíos</a>
-                    </li>
-
-                    <li>
-                        <a href="blog">Blog</a>
-                    </li>
-
-                </ul>
-            </nav>
-
-            <!------------ Botão PRINCIPAL para o formulário ------------>
-            <div class="conteiner_btn">
-                <a class='' id="contato_principal" href="formulario.html">Fale com um especialista</a>
-            </div>
-
-        </header>
-
-        <div class=" conteiner_icone">
-            <img id="icone_sidebar" src="../assets_site_iot_separados/iconesSVG/icons8-cardápio.svg">
-        </div>
-
-
-
-        <!-------------- Conteudo principal do hero banner ------------------->
-        <section id="conteudo_banner" class="alinhamento">
-            <p>PARA DIFERENTES REALIDADES</p>
-            <h1>Soluções que se adaptam ao <span>seu setor.</span>
-            </h1>
+        <section class='espacamento' id="conteudo_banner_principal">
+            <span class="span-topo"><strong>PARA DIFERENTES REALIDADES</strong></span>
+            <h1>Soluções que se adaptam ao <span>seu setor</span></h1>
             <p>Nossas soluções atendem diferentes tipos de cultivo, com configurações especificas para cada necessidade.
             </p>
         </section>
+
     </div>
-    <!--------------------------- fim -------------------------------->
 
-    <main class="alinhamento">
 
-    <!------------------------- Cards ----------------------------->
-        <div id="estrutura_cards">
+    <main>
+
+        <section class='espacamento' id="texto_top_cards">
+            <header>
+                <span><strong>SOLUÇÕES PARA CADA SETOR</strong></span>
+                <h2>Cada cultivo tem suas particularidades.</h2>
+            </header>
+
+            <aside>Da agricultura em larga escala ao cultivo em ambientes controlados, nossas soluções se adaptam às
+                necessidades de cada setor.</aside>
+        </section>
+
+        <!------------------------- Cards ----------------------------->
+        <div class='' id="estrutura_cards">
 
             <section id="cards_main">
                 <article class="conteiner_card">
@@ -242,7 +200,7 @@
 
 
 
-                <article class="conteiner_card">
+                <article id="plantas_ornamentais" class="conteiner_card">
 
                     <div class="img_card">
                         <img src="../assets_site_iot_separados/imagens/imagens_setores/plantas_ornamentais.webp">
@@ -268,7 +226,7 @@
         </div>
         <!--------------------------- fim ----------------------------->
 
-           <!------------------------- Carrossel ---------------------->
+        <!------------------------- Carrossel ---------------------->
         <div id="estrutura_carrossel">
 
             <section id="carrossel_main">
@@ -449,8 +407,9 @@
                 </article>
 
                 <div class="botoes_carrossel">
-                    <button id="anterior" type="button"> < </button>
-                    <button id="proximo" type="button"> > </button>
+                    <button id="anterior" type="button">
+                        < </button>
+                            <button id="proximo" type="button"> > </button>
                 </div>
 
             </section>
@@ -458,35 +417,36 @@
 
 
         </div>
+
         <!--------------------------- fim ----------------------------->
 
-        <div id="banner_main" class="alinhamento">
+        <div class="espacamento" id="banner_main">
 
             <section>
                 <h2>Não encontrou o seu setor?</h2>
                 <p>Também desenvolvemos soluções personalizadas para outras áreas de cultivo. Fale com nossa equipe.</p>
             </section>
 
-            <div>
-                <a href="formulario.html">Falar com um especialista</a>
-            </div>
+
+            <a href="formulario.html">Falar com um especialista</a>
+
 
         </div>
 
     </main>
 
 
-    <footer class="alinhamento">
-
-        <section>
-            <p>2026 Nome da Empresa. Todos os direitos reservados.</p>
-        </section>
+    <footer class="espacamento">
 
         <div>
             <a href="#">Política de Privacidade</a>
             <a href="#">Termos de Uso</a>
             <a href="#">Cookies</a>
         </div>
+
+        <section>
+            <small>2026 Nome da Empresa. Todos os direitos reservados.</small>
+        </section>
 
 
     </footer>
